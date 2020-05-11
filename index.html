@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTF: Notatki</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header" id="top">
+      <nav>
+        <a class="link-header" href="index.html">Strona główna</a>
+        <a class="link-header" href="nauka-html.html">HTML</a>
+        <a class="link-header" href="nauka-css.html">CSS</a>
+        <a class="link-header" href="nauka-js.html">JavaScript</a>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <h1 class="main-heading">Mateusz Kończal - strona domowa</h1>
+      </header>
+
+      <section>
+        <h2 class="second-heading">Kim jestem?</h2>
+        <img src="konczal-header.jpg" alt="Konczal na wakacjach" />
+        <p>
+          Hej! Na co dzień studiuję na kierunku Teleinformatyka na Uniwersytecie
+          Technologiczno-Przyrodniczym w Bydgoszczy. Poza tym bardzo interesuję
+          się Formułą 1 oraz skokami narciarskimi.<br />
+          Witam Cię na mojej stronie domowej, mam nadzieję, że znajdziesz tu
+          trochę przydatnych rzeczy.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="second-heading">Notatki z WTF: Co ten frontend</h2>
+        <article class="article">
+          <h3 class="third-heading">Tydzień 1 (15.04.2020)</h3>
+          <section>
+            <h4 class="fourth-heading">Wstęp do szkolenia i zasady</h4>
+            <p>
+              Przedstawienie informacji praktycznych na temat szkolenia i
+              określenie zasad - oglądanie lekcji, sprwdzenie prac domowych,
+              ponowne obejrzenie lekcji przy wykonywaniu zadań i robienie
+              notatek. Poza nauką na szkoleniu można szlifować swój angielski.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">Czym jest frontend?</h4>
+            <p>
+              Frontend odpowiada za wygląd stron / aplikacji internetowych oraz
+              umożliwia na interkację z użytkownikiem. Jest generowany głównie
+              przy użyciu trzech technologii: HTML, CSS i JavaScript.
+              Technologie frontendowe przejmują rynek tradycyjnych aplikacji w
+              wybranych obszarach.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">Narzędzia i grupy</h4>
+            <p>
+              Szkolenie opiera się na następujących narzędziach: przeglądarka
+              Google Chrome i oprogramowanie Visual Studio Code. Głównym kanałem
+              komunikacji jest Slack, a poza tym istnieje również grupa na
+              Facebooku.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">Ścieżka rozwoju</h4>
+            <p>
+              W branży IT można wyróżnić następujące stopnie doświadczenia:
+              Stażysta / Junior, Mid, Senior, Expert / Ninja / Wizard.<br />
+              Podczas nauki należy wziąć pod uwagę
+              <strong>efekt Krugera-Dunninga</strong>, czyli zależność pomiędzy
+              pewnością siebie a doświadczeniem.<br />
+              <a href="https://roadmap.sh/frontend" target="blank">Tutaj</a>
+              jest dostępna roadmapa dla Frontend Developera.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">Konfiguracja MacOS / Windows / Linux</h4>
+            <p>
+              Nie ma znaczących różnic w pracy na wymienionych systemach
+              operacyjnych. Nazwa katalogu roboczego nosi nazwę <b>dev</b>, a
+              każdy projekt należy otworzyć za pomocą
+              <b>Visual Studio Code</b> (VSC -> File -> Open Folder).
+            </p>
+          </section>
+        </article>
+        <article class="article">
+          <h3 class="third-heading">Tydzień 2 (20.04.2020)</h3>
+          <section>
+            <h4 class="fourth-heading">Warstwy strony internetowej</h4>
+            <p>
+              Strony internetowe posiadają następujące warstwy:<br />
+              treść (warstwa 0),<br />
+              semantyka - HTML (warstwa 1),<br />
+              prezentacja - CSS (warstwa 2),<br />
+              interakcja - JavaScript (warstwa 3).<br />
+              Należy pamiętać, że każda z tych warstw ma swoją odpowiedzialność
+              oraz content is king!
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">HTML - wstęp</h4>
+            <p>
+              <b>HTML = HyperText Markup Language</b> (hipertekstowy język
+              znaczników)<br />
+              Odpowiada za treść strony internetowej, a szczególnie za jej
+              właściwe opakowanie. Treścią są teksty, nagłówki, linki, listy,
+              definicje, obrazki, video, formularze, wszystko co jest nośnikiem
+              informacji. HTML składa się ze znaczników / tagów /elementów i to
+              one są analizowane przez przeglądarkę. Budowa znacznika:<br />
+              &lt;znacznik atrybut="wartość"&gt;treść&lt;/znacznik&gt;.<br />
+              Na stronach internetowych należy stosować
+              <strong>semantyczny kod</strong>, czyli taki, który ma swoje
+              znaczenie. Pliki zawierające kod HTML mają zwykle rozszerzenie
+              <b>.html</b>. Główne znaczniki, które powinny być wykorzystywane
+              przez frontendowca to:<br />
+              &lt;main&gt;,<br />
+              &lt;section&gt;,<br />
+              &lt;article&gt;,<br />
+              &lt;header&gt;,<br />
+              &lt;footer&gt;,<br />
+              &lt;h1 - h6&gt;,<br />
+              &lt;p&gt;.<br />
+              Każda sekcja powinna mieć nagłówek. Po napisaniu kodu HTML zawsze
+              należy zweryfikować jego poprawność w
+              <a href="https://validator.w3.org/nu/#textarea" target="blank">
+                walidatorze</a
+              >.<br />
+              HTML ma następujące cechy: opakowuje i opisuje treść strony, mówi
+              przeglądarce o strukturze dokumentu, posiada swoją zdefiniowaną
+              składnię, nie jest językiem programowania, jest językiem
+              znaczników, aktualną rekomendowaną wersją jest <b>5.2</b>, a całą
+              specyfikację można znaleźć na stronie
+              <a href="https://www.w3.org/TR/html52/" target="blank">w3c</a>.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">CSS - wstęp</h4>
+            <p>
+              <b>CSS = Cascading Style Sheets</b> (kaskadowe arkusze stylów)<br />
+              Odpowiada za prezentację elementów HTML na ekranie, wydrukach,
+              itp. <strong>Składnia CSS to reguły</strong>. Budowa reguły
+              CSS:<br />
+              selektor {<br />
+              właściwość: wartość;<br />
+              }.<br />
+              Pliki zawierające kod CSS mają rozszerzenie <b>.css</b>. Istnieje
+              również możliwość korzystania z reguł CSS bez używania
+              zewnętrznych plików (niezalecana). Zatem można stylować poprzez
+              znacznik &lt;link&gt; lub znacznik &lt;style&gt; w sekcji
+              &lt;head&gt;.<br />
+              Pierwszą metodą stylowania jest <b>stylowanie po elementach</b>.
+              Właściwości i wartości zapisujemy po angielsku, a w przypadku
+              wartości dodatkowo można posłużyć się kodem szesnastkowym (dla
+              kanałów RGB).<br />
+              CSS ma następujące cechy: odpowiada za prezentację strony, nie ma
+              jednej wersji (rozwój modułów), potocznie mówi się, że aktualna
+              wersja to <b>3</b>. Przeglądarki potrafią różnie interpretować CSS
+              co prowadzi do tego, że pisanie stylów powoduje wiele frustracji u
+              programistów, ale jest też niezłym wyzwaniem. Całą specyfikację
+              można znaleźć na stronie
+              <a href="https://www.w3.org/TR/CSS/" target="blank">w3c</a>.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">Magia programowania</h4>
+            <p>
+              Programowanie można porównać do gotowania z tą różnicą, że
+              przepisy są często wymyślane na bieżąco.
+              <strong
+                >Algorytm jest sposobem zapisu kroków, które powinny zostać
+                wykonane w odpowiedniej kolejności.</strong
+              >
+              Zazwyczaj są one zapisywane w postaci schematu blokowego. Jako
+              programowanie można uznać zamianę ludzkiego języka na język
+              zrozumiały przez komputer. Każdy jezyk programowania ma swoją
+              składnię, gramatykę i ortografię. Na świecie jest ponad 700
+              języków programowania, natomiast w szkoleniu poznawany jest jeden
+              - <b>JavaScript</b>.<br />
+              Jest to najbardziej potężna część frontendu. Może modyfikować
+              style (CSS), HTML i treść, zatem potrafi wpływać na każdą z warstw
+              strony internetowej. Odpowiada za interakcje, wywoływanie innych
+              akcji ponad te standardowe, rozszerzając możliwości zwykłych
+              stron. Aktualnie jest jednym z najpopularniejszych języków
+              programowania na świecie.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">
+              DevTools: podglądanie i zmienianie istniejących stron
+            </h4>
+            <p>
+              Narzędzia deweloperskie w przeglądarce Google Chrome można
+              uruchomić, wybierając dowolny element strony internetowej i
+              klikając <b>prawy przycisk myszy</b>, a następnie
+              <b>Zbadaj</b> (Inspect) lub poprzez naciśnięcie klawisza
+              <b>F12</b>. Dzięki temu można podejrzeć treść, HTML oraz style.
+              Wszelkie wprowadzone zmiany na stronie są widocznie od razu, ale
+              tylko lokalnie ze względu na brak dostępu do plików źródłowych
+              (zmiany znikają w momencie odświeżenia strony). DevTools są
+              przydatne po to, aby móc szybko przetestować co można ewentualnie
+              zmienić na stronie, a później to wprowadzić do edytora kodu.
+            </p>
+          </section>
+        </article>
+        <article class="article">
+          <h3 class="third-heading">Tydzień 3 (27.04.2020)</h3>
+          <section>
+            <h4 class="fourth-heading">Kanban</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus, molestias libero quas sequi nam excepturi similique
+              quaerat, aut et corrupti, voluptatum quam cupiditate laborum
+              asperiores eum id inventore mollitia ullam? Similique, quis
+              perspiciatis. Illo nobis beatae eum ex dolorum nulla iste
+              praesentium distinctio, eius molestiae iure! Perspiciatis maxime
+              aspernatur hic quam. Totam sit beatae, quasi eligendi nulla sequi
+              qui quis. Cupiditate asperiores aspernatur commodi est natus qui
+              ratione cumque, eaque officiis fugiat aliquam harum excepturi
+              facere ex odit ipsum illum, iure minima, vitae ullam. Vero,
+              perspiciatis ullam? Natus, possimus eius?
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">HTML - atrybuty</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              incidunt possimus modi rerum expedita placeat. Eligendi, minus
+              consequatur! Aut quibusdam totam perferendis necessitatibus ad
+              voluptate rem eligendi. Ullam, illo a. Dolores vitae corporis
+              aspernatur. Quam, quos minima. Asperiores fugit aliquam est sint
+              tempore non tempora laboriosam aliquid ea voluptatibus magni
+              doloremque, magnam cum aperiam, explicabo laudantium optio placeat
+              veritatis iste. Laudantium nesciunt totam maiores, recusandae
+              dolores iste distinctio amet dolore nulla provident magnam veniam
+              libero, mollitia consequatur id! Iure, optio maiores commodi
+              exercitationem officiis perspiciatis vero nulla laborum possimus
+              deserunt.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">
+              Opowieść o wężu, kebabie, wielbłądzie i Pascalu
+            </h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem quas debitis accusantium velit beatae amet at illo
+              facere fugiat dicta facilis, sequi, asperiores deserunt assumenda
+              perferendis? Deserunt ipsum dolores enim. Explicabo minima quaerat
+              laboriosam aspernatur quae, illum velit! Nobis dicta illo atque
+              cupiditate commodi sint praesentium, earum maxime autem ipsum
+              dolores odit labore consectetur, aperiam nulla fugit vel
+              laudantium modi. Reiciendis commodi obcaecati explicabo?
+              Architecto autem suscipit minima eius reiciendis, eveniet rem
+              nostrum, ratione molestiae inventore earum sapiente ullam, itaque
+              dignissimos blanditiis est numquam. Molestiae temporibus
+              reiciendis accusamus beatae placeat?
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">CSS - klasy</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              harum nobis cupiditate laborum eius veniam facere, dolore
+              accusantium odio ad ducimus repellat, aperiam voluptas repellendus
+              nesciunt voluptate neque, perspiciatis quis. Mollitia quia omnis
+              voluptatem, voluptate fugiat expedita quo iusto minus, consequatur
+              nostrum nihil sed ipsam repudiandae excepturi quaerat sunt
+              doloribus molestias nesciunt, sapiente eveniet est neque autem
+              quibusdam dolorem. Ipsam? Ratione deleniti ipsam aspernatur
+              repudiandae officia non, quasi commodi laboriosam voluptas nam
+              porro, repellendus ipsa accusamus eius voluptate, aperiam beatae
+              ad amet atque? Dolorum esse, facere ab blanditiis vero rerum?
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">Jak działa Internet i przeglądarka?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              consequatur facere cum. Iusto temporibus delectus quas, vero dicta
+              voluptates eius ad. Error ut exercitationem fuga id quas,
+              provident est fugit. Possimus dolor ratione exercitationem
+              nesciunt facere, temporibus eos quasi in maxime rem obcaecati
+              assumenda deserunt, nisi quidem? Nisi nulla, obcaecati pariatur
+              accusamus sunt et, voluptatibus numquam aperiam quia, quod enim!
+              Consequatur ipsa vel culpa ipsam provident error. Modi nemo
+              perferendis ea necessitatibus similique explicabo suscipit
+              deserunt quaerat quas adipisci! Beatae debitis provident sunt
+              reiciendis quasi ratione tenetur totam similique aperiam.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">JavaScript</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+              harum quam maxime assumenda dignissimos magni, dolore vel incidunt
+              optio molestiae libero asperiores veniam ducimus blanditiis
+              aspernatur. Dolorum delectus nisi sed! Quas sapiente nemo dolor
+              magnam et quis, totam iusto nihil sint cumque ad, sit illum fugiat
+              perspiciatis deleniti quia. Voluptatum consequuntur excepturi
+              quasi sapiente tempore? Eligendi ad magni aspernatur amet!
+              Excepturi error adipisci illo enim saepe unde, dolorum ipsam eos
+              repudiandae velit voluptas voluptate doloremque quam eius. Magni
+              adipisci asperiores eius aliquam doloribus. Cumque vel sed in,
+              ratione libero nisi.
+            </p>
+          </section>
+          <section>
+            <h4 class="fourth-heading">Terminal</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              aperiam, quia laudantium quidem dolor sed minus quo nisi repellat
+              modi similique voluptas ea doloribus numquam, reiciendis dicta ab!
+              Magnam, quia. Inventore odit debitis ea? Modi deleniti mollitia
+              esse, aspernatur possimus animi quisquam! Unde, ab quo error
+              omnis, at aspernatur ratione, quam ea quidem ex beatae deserunt
+              corrupti minus corporis quas! Aspernatur fugit explicabo eveniet
+              est aliquid dicta tempore ipsum. Nobis asperiores atque ab est
+              excepturi, incidunt sequi eius accusamus quam! Itaque eligendi
+              incidunt in voluptatibus, deleniti optio laborum sint molestiae.
+            </p>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Wszystkie treści są efektem uczestnictwa w szkoleniu
+        <a href="https://cotenfrontend.pl/" target="blank"
+          >WTF: Co ten frontend</a
+        >🚀.<br />
+        <a class="link-up" href="#top">Wróć na górę strony</a>
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
