@@ -1,35 +1,40 @@
 body {
-    background: rgba(130, 170, 243, 0.877);
+  background: rgba(130, 170, 243, 0.877);
 }
 
 .header {
-    background: #e9e9e9;
+  background: #e9e9e9;
 }
 
 .link-header {
-    color: rgb(139, 63, 13);
+  color: rgb(139, 63, 13);
 }
 
 .link-up {
-    color: #08095e;
+  color: #08095e;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .main-heading {
-    color: rgb(6, 5, 90);
+  color: rgb(6, 5, 90);
 }
 
 .second-heading {
-    color: #072c52;
+  color: #072c52;
 }
 
 .third-heading {
-    color: #bb1111;
+  color: #bb1111;
 }
 
 .fourth-heading {
-    color: #860c91;
+  color: #860c91;
 }
 
 .article {
-    background: #97c7f7;
+  background: #97c7f7;
 }
