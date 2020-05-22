@@ -11,16 +11,16 @@ body {
   padding: 16px;
 }
 
+.about-me__heading {
+  color: #15616d;
+}
+
 .about-me__picture {
   max-width: 200px;
   max-height: 300px;
   padding-right: 16px;
   margin-bottom: 16px;
   float: left;
-}
-
-.about-me__title {
-  color: #15616d;
 }
 
 .footer {
@@ -41,23 +41,13 @@ body {
   background: #ffffff;
 }
 
-.lesson__link {
-  color: darkred;
-}
-
-.main__title {
-  color: #022b3a;
-}
-
-.main__picture {
-  max-width: 200px;
-  max-height: 200px;
-  padding: 32px;
-}
-
 .lesson__description {
   color: rgb(29, 28, 28);
   margin-bottom: 32px;
+}
+
+.lesson__link {
+  color: darkred;
 }
 
 .lesson__title {
@@ -67,6 +57,16 @@ body {
 .main {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.main__heading {
+  color: #022b3a;
+}
+
+.main__picture {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 32px;
 }
 
 .navigation {
@@ -101,7 +101,7 @@ body {
   color: #000;
 }
 
-.notes__title {
+.notes__heading {
   color: #1f7a8c;
 }
 
@@ -115,7 +115,7 @@ body {
   border: 1px solid #92140c;
 }
 
-.week-summary__title {
+.week-summary__heading {
   color: #21a179;
   margin-bottom: 32px;
 }
