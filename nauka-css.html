@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WTF: Notatki</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-
-    <header id="top" class="header">
-        <nav>
-            <a class="link-header" href="index.html">Strona główna</a>
-            <a class="link-header" href="nauka-html.html">HTML</a>
-            <a class="link-header" href="nauka-css.html">CSS</a>
-            <a class="link-header" href="nauka-js.html">JavaScript</a>
-        </nav>
+  <body>
+    <header class="header" id="top">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">HTML</a>
+        <a class="navigation__link navigation__link--css" href="nauka-css.html"
+          >CSS</a
+        >
+        <a class="navigation__link" href="nauka-js.html">JavaScript</a>
+      </nav>
     </header>
 
-    <main>
-        <header>
-            <h1 class="main-heading">CSS</h1>
-            <img src="logo-css3.jpg" alt="Logo CSS3">
-        </header>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">CSS</h1>
+        <img class="main__picture" src="logo-css3.jpg" alt="Logo CSS3" />
+      </header>
 
-        <section>
-            <h2 class="second-heading">Tydzień 2</h2>
-            <article class="article">
-                <h3 class="third-heading">Wstęp do CSS</h3>
-                <p>CSS = Cascading Style Sheets</p>
-            </article>
-        </section>
+      <section class="week-summary">
+        <h2 class="week-summary__heading">Tydzień 2</h2>
+        <article class="lesson">
+          <h3 class="lesson__title">Wstęp do CSS</h3>
+          <p class="lesson__description">CSS = Cascading Style Sheets</p>
+        </article>
+      </section>
 
-        <section>
-            <h2 class="second-heading">Tydzień 3</h2>
-            <article class="article">
-                <h3 class="third-heading">Selektory</h3>
-                <p>#id, .class, element</p>
-            </article>
-        </section>
+      <section class="week-summary">
+        <h2 class="week-summary__heading">Tydzień 3</h2>
+        <article class="lesson">
+          <h3 class="lesson__title">Selektory</h3>
+          <p class="lesson__description">#id, .class, element</p>
+        </article>
+      </section>
     </main>
 
-    <footer>
-        <p>Wszystkie treści są efektem uczestnictwa w szkoleniu <a href="https://cotenfrontend.pl/" target="blank">WTF:
-                Co ten frontend</a>🚀.<br />
-            <a class="link-up" href="#top">Wróć na górę strony</a></p>
+    <footer class="footer">
+      <p>
+        Wszystkie treści są efektem uczestnictwa w szkoleniu
+        <a class="footer__link" href="https://cotenfrontend.pl/" target="blank"
+          >WTF: Co ten frontend</a
+        >🚀.<br />
+        <a class="footer__link--top" href="#top">Wróć na górę strony</a>
+      </p>
     </footer>
+
     <script src="main.js"></script>
-
-</body>
-
+  </body>
 </html>

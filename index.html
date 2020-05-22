@@ -9,23 +9,30 @@
 
   <body>
     <header class="header" id="top">
-      <nav>
-        <a class="link-header" href="index.html">Strona główna</a>
-        <a class="link-header" href="nauka-html.html">HTML</a>
-        <a class="link-header" href="nauka-css.html">CSS</a>
-        <a class="link-header" href="nauka-js.html">JavaScript</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">HTML</a>
+        <a class="navigation__link" href="nauka-css.html">CSS</a>
+        <a class="navigation__link" href="nauka-js.html">JavaScript</a>
       </nav>
     </header>
 
-    <main>
-      <header>
-        <h1 class="main-heading">Mateusz Kończal - strona domowa</h1>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Mateusz Kończal - strona domowa</h1>
+        <p class="main__description main__description--js"></p>
       </header>
 
-      <section>
-        <h2 class="second-heading">Kim jestem?</h2>
-        <img src="konczal-header.jpg" alt="Konczal na wakacjach" />
-        <p>
+      <section class="about-me">
+        <h2 class="about-me__heading">Kim jestem?</h2>
+        <img
+          class="about-me__picture"
+          src="konczal-header.jpg"
+          alt="Konczal na wakacjach"
+        />
+        <p class="about-me__description">
           Hej! Na co dzień studiuję na kierunku Teleinformatyka na Uniwersytecie
           Technologiczno-Przyrodniczym w Bydgoszczy. Poza tym bardzo interesuję
           się Formułą 1 oraz skokami narciarskimi.<br />
@@ -34,22 +41,23 @@
         </p>
       </section>
 
-      <section>
-        <h2 class="second-heading">Notatki z WTF: Co ten frontend</h2>
-        <article class="article">
-          <h3 class="third-heading">Tydzień 1 (15.04.2020)</h3>
-          <section>
-            <h4 class="fourth-heading">Wstęp do szkolenia i zasady</h4>
-            <p>
+      <section class="notes">
+        <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
+
+        <article class="week-summary">
+          <h3 class="week-summary__heading">Tydzień 1 (15.04.2020)</h3>
+          <section class="lesson">
+            <h4 class="lesson__title">Wstęp do szkolenia i zasady</h4>
+            <p class="lesson__description">
               Przedstawienie informacji praktycznych na temat szkolenia i
               określenie zasad - oglądanie lekcji, sprwdzenie prac domowych,
               ponowne obejrzenie lekcji przy wykonywaniu zadań i robienie
               notatek. Poza nauką na szkoleniu można szlifować swój angielski.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">Czym jest frontend?</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">Czym jest frontend?</h4>
+            <p class="lesson__description">
               Frontend odpowiada za wygląd stron / aplikacji internetowych oraz
               umożliwia na interkację z użytkownikiem. Jest generowany głównie
               przy użyciu trzech technologii: HTML, CSS i JavaScript.
@@ -57,30 +65,35 @@
               wybranych obszarach.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">Narzędzia i grupy</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">Narzędzia i grupy</h4>
+            <p class="lesson__description">
               Szkolenie opiera się na następujących narzędziach: przeglądarka
               Google Chrome i oprogramowanie Visual Studio Code. Głównym kanałem
               komunikacji jest Slack, a poza tym istnieje również grupa na
               Facebooku.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">Ścieżka rozwoju</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">Ścieżka rozwoju</h4>
+            <p class="lesson__description">
               W branży IT można wyróżnić następujące stopnie doświadczenia:
               Stażysta / Junior, Mid, Senior, Expert / Ninja / Wizard.<br />
               Podczas nauki należy wziąć pod uwagę
               <strong>efekt Krugera-Dunninga</strong>, czyli zależność pomiędzy
               pewnością siebie a doświadczeniem.<br />
-              <a href="https://roadmap.sh/frontend" target="blank">Tutaj</a>
+              <a
+                class="lesson__link"
+                href="https://roadmap.sh/frontend"
+                target="blank"
+                >Tutaj</a
+              >
               jest dostępna roadmapa dla Frontend Developera.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">Konfiguracja MacOS / Windows / Linux</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">Konfiguracja MacOS / Windows / Linux</h4>
+            <p class="lesson__description">
               Nie ma znaczących różnic w pracy na wymienionych systemach
               operacyjnych. Nazwa katalogu roboczego nosi nazwę <b>dev</b>, a
               każdy projekt należy otworzyć za pomocą
@@ -88,11 +101,12 @@
             </p>
           </section>
         </article>
-        <article class="article">
-          <h3 class="third-heading">Tydzień 2 (20.04.2020)</h3>
-          <section>
-            <h4 class="fourth-heading">Warstwy strony internetowej</h4>
-            <p>
+
+        <article class="week-summary">
+          <h3 class="week-summary__heading">Tydzień 2 (20.04.2020)</h3>
+          <section class="lesson">
+            <h4 class="lesson__title">Warstwy strony internetowej</h4>
+            <p class="lesson__description">
               Strony internetowe posiadają następujące warstwy:<br />
               treść (warstwa 0),<br />
               semantyka - HTML (warstwa 1),<br />
@@ -102,9 +116,9 @@
               oraz content is king!
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">HTML - wstęp</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">HTML - wstęp</h4>
+            <p class="lesson__description">
               <b>HTML = HyperText Markup Language</b> (hipertekstowy język
               znaczników)<br />
               Odpowiada za treść strony internetowej, a szczególnie za jej
@@ -127,7 +141,11 @@
               &lt;p&gt;.<br />
               Każda sekcja powinna mieć nagłówek. Po napisaniu kodu HTML zawsze
               należy zweryfikować jego poprawność w
-              <a href="https://validator.w3.org/nu/#textarea" target="blank">
+              <a
+                class="lesson__link"
+                href="https://validator.w3.org/nu/#textarea"
+                target="blank"
+              >
                 walidatorze</a
               >.<br />
               HTML ma następujące cechy: opakowuje i opisuje treść strony, mówi
@@ -135,12 +153,17 @@
               składnię, nie jest językiem programowania, jest językiem
               znaczników, aktualną rekomendowaną wersją jest <b>5.2</b>, a całą
               specyfikację można znaleźć na stronie
-              <a href="https://www.w3.org/TR/html52/" target="blank">w3c</a>.
+              <a
+                class="lesson__link"
+                href="https://www.w3.org/TR/html52/"
+                target="blank"
+                >w3c</a
+              >.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">CSS - wstęp</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">CSS - wstęp</h4>
+            <p class="lesson__description">
               <b>CSS = Cascading Style Sheets</b> (kaskadowe arkusze stylów)<br />
               Odpowiada za prezentację elementów HTML na ekranie, wydrukach,
               itp. <strong>Składnia CSS to reguły</strong>. Budowa reguły
@@ -163,12 +186,17 @@
               co prowadzi do tego, że pisanie stylów powoduje wiele frustracji u
               programistów, ale jest też niezłym wyzwaniem. Całą specyfikację
               można znaleźć na stronie
-              <a href="https://www.w3.org/TR/CSS/" target="blank">w3c</a>.
+              <a
+                class="lesson__link"
+                href="https://www.w3.org/TR/CSS/"
+                target="blank"
+                >w3c</a
+              >.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">Magia programowania</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">Magia programowania</h4>
+            <p class="lesson__description">
               Programowanie można porównać do gotowania z tą różnicą, że
               przepisy są często wymyślane na bieżąco.
               <strong
@@ -189,11 +217,11 @@
               programowania na świecie.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">
+          <section class="lesson">
+            <h4 class="lesson__title">
               DevTools: podglądanie i zmienianie istniejących stron
             </h4>
-            <p>
+            <p class="lesson__description">
               Narzędzia deweloperskie w przeglądarce Google Chrome można
               uruchomić, wybierając dowolny element strony internetowej i
               klikając <b>prawy przycisk myszy</b>, a następnie
@@ -207,11 +235,12 @@
             </p>
           </section>
         </article>
-        <article class="article">
-          <h3 class="third-heading">Tydzień 3 (27.04.2020)</h3>
-          <section>
-            <h4 class="fourth-heading">Kanban</h4>
-            <p>
+
+        <article class="week-summary">
+          <h3 class="week-summary__heading">Tydzień 3 (27.04.2020)</h3>
+          <section class="lesson">
+            <h4 class="lesson__title">Kanban</h4>
+            <p class="lesson__description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Accusamus, molestias libero quas sequi nam excepturi similique
               quaerat, aut et corrupti, voluptatum quam cupiditate laborum
@@ -225,9 +254,9 @@
               perspiciatis ullam? Natus, possimus eius?
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">HTML - atrybuty</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">HTML - atrybuty</h4>
+            <p class="lesson__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               incidunt possimus modi rerum expedita placeat. Eligendi, minus
               consequatur! Aut quibusdam totam perferendis necessitatibus ad
@@ -242,11 +271,11 @@
               deserunt.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">
+          <section class="lesson">
+            <h4 class="lesson__title">
               Opowieść o wężu, kebabie, wielbłądzie i Pascalu
             </h4>
-            <p>
+            <p class="lesson__description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Exercitationem quas debitis accusantium velit beatae amet at illo
               facere fugiat dicta facilis, sequi, asperiores deserunt assumenda
@@ -261,9 +290,9 @@
               reiciendis accusamus beatae placeat?
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">CSS - klasy</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">CSS - klasy</h4>
+            <p class="lesson__description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
               harum nobis cupiditate laborum eius veniam facere, dolore
               accusantium odio ad ducimus repellat, aperiam voluptas repellendus
@@ -277,9 +306,9 @@
               ad amet atque? Dolorum esse, facere ab blanditiis vero rerum?
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">Jak działa Internet i przeglądarka?</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">Jak działa Internet i przeglądarka?</h4>
+            <p class="lesson__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               consequatur facere cum. Iusto temporibus delectus quas, vero dicta
               voluptates eius ad. Error ut exercitationem fuga id quas,
@@ -293,9 +322,9 @@
               reiciendis quasi ratione tenetur totam similique aperiam.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">JavaScript</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">JavaScript</h4>
+            <p class="lesson__description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
               harum quam maxime assumenda dignissimos magni, dolore vel incidunt
               optio molestiae libero asperiores veniam ducimus blanditiis
@@ -309,9 +338,9 @@
               ratione libero nisi.
             </p>
           </section>
-          <section>
-            <h4 class="fourth-heading">Terminal</h4>
-            <p>
+          <section class="lesson">
+            <h4 class="lesson__title">Terminal</h4>
+            <p class="lesson__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
               aperiam, quia laudantium quidem dolor sed minus quo nisi repellat
               modi similique voluptas ea doloribus numquam, reiciendis dicta ab!
@@ -325,18 +354,240 @@
             </p>
           </section>
         </article>
+
+        <article class="week-summary week-summary--special">
+          <h3 class="week-summary__heading">Tydzień 4 (04.05.2020)</h3>
+          <section class="lesson">
+            <h4 class="lesson__title">Jest GIT!</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus, molestias libero quas sequi nam excepturi similique
+              quaerat, aut et corrupti, voluptatum quam cupiditate laborum
+              asperiores eum id inventore mollitia ullam? Similique, quis
+              perspiciatis. Illo nobis beatae eum ex dolorum nulla iste
+              praesentium distinctio, eius molestiae iure! Perspiciatis maxime
+              aspernatur hic quam. Totam sit beatae, quasi eligendi nulla sequi
+              qui quis. Cupiditate asperiores aspernatur commodi est natus qui
+              ratione cumque, eaque officiis fugiat aliquam harum excepturi
+              facere ex odit ipsum illum, iure minima, vitae ullam. Vero,
+              perspiciatis ullam? Natus, possimus eius?
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">GitHub</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              incidunt possimus modi rerum expedita placeat. Eligendi, minus
+              consequatur! Aut quibusdam totam perferendis necessitatibus ad
+              voluptate rem eligendi. Ullam, illo a. Dolores vitae corporis
+              aspernatur. Quam, quos minima. Asperiores fugit aliquam est sint
+              tempore non tempora laboriosam aliquid ea voluptatibus magni
+              doloremque, magnam cum aperiam, explicabo laudantium optio placeat
+              veritatis iste. Laudantium nesciunt totam maiores, recusandae
+              dolores iste distinctio amet dolore nulla provident magnam veniam
+              libero, mollitia consequatur id! Iure, optio maiores commodi
+              exercitationem officiis perspiciatis vero nulla laborum possimus
+              deserunt.
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">
+              Życie w pudełku: Display, wymiary i overflow
+            </h4>
+            <p class="lesson__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem quas debitis accusantium velit beatae amet at illo
+              facere fugiat dicta facilis, sequi, asperiores deserunt assumenda
+              perferendis? Deserunt ipsum dolores enim. Explicabo minima quaerat
+              laboriosam aspernatur quae, illum velit! Nobis dicta illo atque
+              cupiditate commodi sint praesentium, earum maxime autem ipsum
+              dolores odit labore consectetur, aperiam nulla fugit vel
+              laudantium modi. Reiciendis commodi obcaecati explicabo?
+              Architecto autem suscipit minima eius reiciendis, eveniet rem
+              nostrum, ratione molestiae inventore earum sapiente ullam, itaque
+              dignissimos blanditiis est numquam. Molestiae temporibus
+              reiciendis accusamus beatae placeat?
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">Życie w pudełku: Jednostki</h4>
+            <p class="lesson__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              harum nobis cupiditate laborum eius veniam facere, dolore
+              accusantium odio ad ducimus repellat, aperiam voluptas repellendus
+              nesciunt voluptate neque, perspiciatis quis. Mollitia quia omnis
+              voluptatem, voluptate fugiat expedita quo iusto minus, consequatur
+              nostrum nihil sed ipsam repudiandae excepturi quaerat sunt
+              doloribus molestias nesciunt, sapiente eveniet est neque autem
+              quibusdam dolorem. Ipsam? Ratione deleniti ipsam aspernatur
+              repudiandae officia non, quasi commodi laboriosam voluptas nam
+              porro, repellendus ipsa accusamus eius voluptate, aperiam beatae
+              ad amet atque? Dolorum esse, facere ab blanditiis vero rerum?
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">
+              Życie w pudełku: Box model (padding / border / margin)
+            </h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              consequatur facere cum. Iusto temporibus delectus quas, vero dicta
+              voluptates eius ad. Error ut exercitationem fuga id quas,
+              provident est fugit. Possimus dolor ratione exercitationem
+              nesciunt facere, temporibus eos quasi in maxime rem obcaecati
+              assumenda deserunt, nisi quidem? Nisi nulla, obcaecati pariatur
+              accusamus sunt et, voluptatibus numquam aperiam quia, quod enim!
+              Consequatur ipsa vel culpa ipsam provident error. Modi nemo
+              perferendis ea necessitatibus similique explicabo suscipit
+              deserunt quaerat quas adipisci! Beatae debitis provident sunt
+              reiciendis quasi ratione tenetur totam similique aperiam.
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">Życie w pudełku: box-sizing</h4>
+            <p class="lesson__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+              harum quam maxime assumenda dignissimos magni, dolore vel incidunt
+              optio molestiae libero asperiores veniam ducimus blanditiis
+              aspernatur. Dolorum delectus nisi sed! Quas sapiente nemo dolor
+              magnam et quis, totam iusto nihil sint cumque ad, sit illum fugiat
+              perspiciatis deleniti quia. Voluptatum consequuntur excepturi
+              quasi sapiente tempore? Eligendi ad magni aspernatur amet!
+              Excepturi error adipisci illo enim saepe unde, dolorum ipsam eos
+              repudiandae velit voluptas voluptate doloremque quam eius. Magni
+              adipisci asperiores eius aliquam doloribus. Cumque vel sed in,
+              ratione libero nisi.
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">Życie w pudełku: position</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              aperiam, quia laudantium quidem dolor sed minus quo nisi repellat
+              modi similique voluptas ea doloribus numquam, reiciendis dicta ab!
+              Magnam, quia. Inventore odit debitis ea? Modi deleniti mollitia
+              esse, aspernatur possimus animi quisquam! Unde, ab quo error
+              omnis, at aspernatur ratione, quam ea quidem ex beatae deserunt
+              corrupti minus corporis quas! Aspernatur fugit explicabo eveniet
+              est aliquid dicta tempore ipsum. Nobis asperiores atque ab est
+              excepturi, incidunt sequi eius accusamus quam! Itaque eligendi
+              incidunt in voluptatibus, deleniti optio laborum sint molestiae.
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">Życie w pudełku: float</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+              quasi illo quam veritatis aspernatur praesentium quaerat provident
+              laboriosam, inventore minima reprehenderit porro, obcaecati,
+              delectus quae tempora. Blanditiis nobis nihil laborum. Explicabo,
+              alias tempore! Animi fuga odit adipisci pariatur magnam architecto
+              quasi consectetur? Enim doloribus officiis, id alias adipisci
+              numquam eos earum, quod pariatur hic nisi magni possimus quisquam.
+              Ad, aliquid? Iure debitis, perferendis nesciunt quas nemo quidem
+              eaque nam obcaecati asperiores recusandae error accusantium quod
+              totam vitae? Nisi vitae asperiores rem et hic ad mollitia quos
+              libero distinctio, maiores id!
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">JS: Typy danych i immutability</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              itaque voluptatem illum, velit eligendi quis! Error itaque dolor,
+              dolorem esse ab nostrum blanditiis veritatis reprehenderit
+              perferendis! Ad porro ipsum debitis! Earum qui, totam facilis
+              minus asperiores praesentium cumque quasi nemo quae a modi minima
+              sit, iusto impedit maxime nisi assumenda. Fuga doloribus dolore
+              rerum in repellendus mollitia sit voluptatem impedit. Fugiat,
+              recusandae autem, eos asperiores maiores harum pariatur officia
+              tempore dolorum nobis amet qui debitis optio quas eligendi, ex
+              esse veritatis reprehenderit? Ratione impedit quas tenetur
+              inventore, eum nesciunt placeat!
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">
+              Code: formatowanie kodu i lokalny serwer
+            </h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+              libero, possimus nesciunt placeat fuga itaque maiores doloribus
+              doloremque quidem aliquid veniam vel inventore eveniet magnam,
+              accusantium repellendus rerum! Laboriosam, eaque! Quam id vero
+              asperiores? Officiis saepe repellendus consequatur! Praesentium
+              aspernatur quo molestias soluta culpa officia nisi voluptatibus!
+              Aliquid error repellat ipsa atque distinctio saepe, quasi a
+              placeat quisquam libero similique. Illo eos expedita ratione,
+              similique libero magni, tempore excepturi neque aspernatur eius
+              voluptatem minus hic dicta ad voluptas doloremque culpa maiores
+              itaque impedit illum eligendi! A distinctio culpa dolore nostrum!
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">Block - Element - Modifier</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quo,
+              deleniti ullam deserunt dignissimos provident pariatur alias
+              tempora excepturi, consectetur at, cupiditate velit? Nam
+              repellendus nesciunt reprehenderit voluptates est voluptatem.
+              Obcaecati dignissimos nisi veritatis error sint alias amet fugit
+              nostrum labore! Mollitia quisquam, eius sapiente assumenda, minus
+              voluptatem provident rem accusantium dicta reiciendis illo earum.
+              Consequuntur, aut? Dolorum, officiis nostrum. Ipsa debitis quae
+              harum blanditiis hic commodi, quos, est ad nemo quod labore neque
+              laudantium molestiae? Obcaecati quos adipisci ex. Saepe quod
+              doloribus dolores dicta consequuntur necessitatibus voluptates
+              dolorum quidem.
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">DOMowe przedszkole</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+              maiores incidunt velit, iusto, magnam veniam quis, beatae enim
+              unde officia excepturi molestias. Quia quasi facilis, accusamus
+              illo est natus nemo! Sint aliquam, reprehenderit possimus
+              provident est perferendis doloremque ea maiores eius porro labore,
+              ullam repudiandae perspiciatis reiciendis culpa debitis dolores
+              numquam consectetur? Eaque ipsa maiores adipisci vitae assumenda,
+              sapiente amet. Repellat, reiciendis voluptatum dolorum, deleniti
+              vero quasi voluptates, laudantium quas iure unde eius corrupti.
+              Veniam aspernatur vel natus voluptas, asperiores pariatur
+              obcaecati consequuntur ad maxime quo excepturi eius dolore in!
+            </p>
+          </section>
+          <section class="lesson">
+            <h4 class="lesson__title">Frontend z perspektywy juniora</h4>
+            <p class="lesson__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              minima velit libero ex autem voluptatibus aperiam alias,
+              reprehenderit aliquid, sapiente hic blanditiis possimus, mollitia
+              perspiciatis explicabo eveniet ad ducimus neque. Est esse
+              molestiae quae illum iste earum quidem nulla eius ut vitae
+              corrupti, nemo ipsam pariatur assumenda vero deserunt optio
+              voluptas beatae eaque a exercitationem deleniti facere hic
+              officiis. Animi. Error dignissimos ad corrupti? Perspiciatis minus
+              vero corrupti nisi dolorem at, voluptatem aspernatur
+              exercitationem unde iusto dolores. Atque accusamus, explicabo
+              facere expedita sapiente soluta aut nulla dolores libero iusto
+              veniam?
+            </p>
+          </section>
+        </article>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>
         Wszystkie treści są efektem uczestnictwa w szkoleniu
-        <a href="https://cotenfrontend.pl/" target="blank"
+        <a class="footer__link" href="https://cotenfrontend.pl/" target="blank"
           >WTF: Co ten frontend</a
         >🚀.<br />
-        <a class="link-up" href="#top">Wróć na górę strony</a>
+        <a class="footer__link--top" href="#top">Wróć na górę strony</a>
       </p>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>

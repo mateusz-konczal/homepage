@@ -1,35 +1,121 @@
 body {
-    background: rgba(130, 170, 243, 0.877);
+  background: #fefefe;
 }
 
-.header {
-    background: #e9e9e9;
+.about-me {
+  overflow: hidden;
 }
 
-.link-header {
-    color: rgb(139, 63, 13);
+.about-me__description {
+  color: #7e0e06;
+  padding: 16px;
 }
 
-.link-up {
-    color: #08095e;
+.about-me__heading {
+  color: #15616d;
 }
 
-.main-heading {
-    color: rgb(6, 5, 90);
+.about-me__picture {
+  max-width: 200px;
+  max-height: 300px;
+  padding-right: 16px;
+  margin-bottom: 16px;
+  float: left;
 }
 
-.second-heading {
-    color: #072c52;
+.footer {
+  color: #78290f;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.third-heading {
-    color: #bb1111;
+.footer__link {
+  color: #78290f;
 }
 
-.fourth-heading {
-    color: #860c91;
+.footer__link--top {
+  color: #ff7d00;
 }
 
-.article {
-    background: #97c7f7;
+.lesson {
+  background: #ffffff;
+}
+
+.lesson__description {
+  color: rgb(29, 28, 28);
+  margin-bottom: 32px;
+}
+
+.lesson__link {
+  color: darkred;
+}
+
+.lesson__title {
+  color: #b62dc9;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main__heading {
+  color: #022b3a;
+}
+
+.main__picture {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 32px;
+}
+
+.navigation {
+  background: #478a05;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.navigation__link {
+  color: #fff;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation__link--css {
+  background: yellow;
+  color: #000;
+}
+
+.navigation__link--homepage {
+  background: yellow;
+  color: #000;
+}
+
+.navigation__link--html {
+  background: yellow;
+  color: #000;
+}
+
+.navigation__link--javascript {
+  background: yellow;
+  color: #000;
+}
+
+.notes__heading {
+  color: #1f7a8c;
+}
+
+.week-summary {
+  padding: 16px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.week-summary--special {
+  border: 1px solid #92140c;
+}
+
+.week-summary__heading {
+  color: #21a179;
+  margin-bottom: 32px;
 }
