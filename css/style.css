@@ -1,5 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background: #fefefe;
+  background-color: #fff0a0;
+  background-image: linear-gradient(315deg, #fffad9 0%, #d8ffd6 100%);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-me {
@@ -9,6 +21,8 @@ body {
 .about-me__description {
   color: #7e0e06;
   padding: 16px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .about-me__heading {
@@ -16,8 +30,8 @@ body {
 }
 
 .about-me__picture {
-  max-width: 200px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 350px;
   padding-right: 16px;
   margin-bottom: 16px;
   float: left;
@@ -27,6 +41,8 @@ body {
   color: #78290f;
   max-width: 1000px;
   margin: 0 auto;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .footer__link {
@@ -37,13 +53,16 @@ body {
   color: #ff7d00;
 }
 
-.lesson {
-  background: #ffffff;
+.header {
+  top: 0;
+  position: sticky;
 }
 
 .lesson__description {
   color: rgb(29, 28, 28);
   margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .lesson__link {
@@ -61,18 +80,21 @@ body {
 
 .main__heading {
   color: #022b3a;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .main__picture {
   max-width: 200px;
   max-height: 200px;
-  padding: 32px;
 }
 
 .navigation {
   background: #478a05;
   padding: 16px;
   border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navigation__link {
