@@ -47,6 +47,11 @@ body {
   color: #ff7d00;
 }
 
+.header {
+  top: 0;
+  position: sticky;
+}
+
 .lesson {
   background: #ffffff;
 }
