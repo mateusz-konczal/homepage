@@ -83,6 +83,8 @@ body {
   background: #478a05;
   padding: 16px;
   border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navigation__link {
