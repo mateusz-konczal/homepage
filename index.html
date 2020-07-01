@@ -44,922 +44,947 @@
 
       <section class="notes">
         <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
+        <div class="notes__grid">
+          <article class="week-summary">
+            <h3 class="week-summary__heading">Tydzień 1 (15.04.2020)</h3>
+            <section class="lesson">
+              <h4 class="lesson__title">Wstęp do szkolenia i zasady</h4>
+              <p class="lesson__description">
+                Przedstawienie informacji praktycznych na temat szkolenia i
+                określenie zasad - oglądanie lekcji, sprwdzenie prac domowych,
+                ponowne obejrzenie lekcji przy wykonywaniu zadań i robienie
+                notatek. Poza nauką na szkoleniu można szlifować swój angielski.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Czym jest frontend?</h4>
+              <p class="lesson__description">
+                Frontend odpowiada za wygląd stron / aplikacji internetowych
+                oraz umożliwia na interkację z użytkownikiem. Jest generowany
+                głównie przy użyciu trzech technologii: HTML, CSS i JavaScript.
+                Technologie frontendowe przejmują rynek tradycyjnych aplikacji w
+                wybranych obszarach.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Narzędzia i grupy</h4>
+              <p class="lesson__description">
+                Szkolenie opiera się na następujących narzędziach: przeglądarka
+                Google Chrome i oprogramowanie Visual Studio Code. Głównym
+                kanałem komunikacji jest Slack, a poza tym istnieje również
+                grupa na Facebooku.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Ścieżka rozwoju</h4>
+              <p class="lesson__description">
+                W branży IT można wyróżnić następujące stopnie doświadczenia:
+                Stażysta / Junior, Mid, Senior, Expert / Ninja / Wizard.<br />
+                Podczas nauki należy wziąć pod uwagę
+                <strong>efekt Krugera-Dunninga</strong>, czyli zależność
+                pomiędzy pewnością siebie a doświadczeniem.<br />
+                <a
+                  class="lesson__link"
+                  href="https://roadmap.sh/frontend"
+                  target="blank"
+                  >Tutaj</a
+                >
+                jest dostępna roadmapa dla Frontend Developera.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Konfiguracja MacOS / Windows / Linux
+              </h4>
+              <p class="lesson__description">
+                Nie ma znaczących różnic w pracy na wymienionych systemach
+                operacyjnych. Nazwa katalogu roboczego nosi nazwę <b>dev</b>, a
+                każdy projekt należy otworzyć za pomocą
+                <b>Visual Studio Code</b> (VSC -> File -> Open Folder).
+              </p>
+            </section>
+          </article>
 
-        <article class="week-summary">
-          <h3 class="week-summary__heading">Tydzień 1 (15.04.2020)</h3>
-          <section class="lesson">
-            <h4 class="lesson__title">Wstęp do szkolenia i zasady</h4>
-            <p class="lesson__description">
-              Przedstawienie informacji praktycznych na temat szkolenia i
-              określenie zasad - oglądanie lekcji, sprwdzenie prac domowych,
-              ponowne obejrzenie lekcji przy wykonywaniu zadań i robienie
-              notatek. Poza nauką na szkoleniu można szlifować swój angielski.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Czym jest frontend?</h4>
-            <p class="lesson__description">
-              Frontend odpowiada za wygląd stron / aplikacji internetowych oraz
-              umożliwia na interkację z użytkownikiem. Jest generowany głównie
-              przy użyciu trzech technologii: HTML, CSS i JavaScript.
-              Technologie frontendowe przejmują rynek tradycyjnych aplikacji w
-              wybranych obszarach.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Narzędzia i grupy</h4>
-            <p class="lesson__description">
-              Szkolenie opiera się na następujących narzędziach: przeglądarka
-              Google Chrome i oprogramowanie Visual Studio Code. Głównym kanałem
-              komunikacji jest Slack, a poza tym istnieje również grupa na
-              Facebooku.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Ścieżka rozwoju</h4>
-            <p class="lesson__description">
-              W branży IT można wyróżnić następujące stopnie doświadczenia:
-              Stażysta / Junior, Mid, Senior, Expert / Ninja / Wizard.<br />
-              Podczas nauki należy wziąć pod uwagę
-              <strong>efekt Krugera-Dunninga</strong>, czyli zależność pomiędzy
-              pewnością siebie a doświadczeniem.<br />
-              <a
-                class="lesson__link"
-                href="https://roadmap.sh/frontend"
-                target="blank"
-                >Tutaj</a
-              >
-              jest dostępna roadmapa dla Frontend Developera.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Konfiguracja MacOS / Windows / Linux</h4>
-            <p class="lesson__description">
-              Nie ma znaczących różnic w pracy na wymienionych systemach
-              operacyjnych. Nazwa katalogu roboczego nosi nazwę <b>dev</b>, a
-              każdy projekt należy otworzyć za pomocą
-              <b>Visual Studio Code</b> (VSC -> File -> Open Folder).
-            </p>
-          </section>
-        </article>
+          <article class="week-summary">
+            <h3 class="week-summary__heading">Tydzień 2 (20.04.2020)</h3>
+            <section class="lesson">
+              <h4 class="lesson__title">Warstwy strony internetowej</h4>
+              <p class="lesson__description">
+                Strony internetowe posiadają następujące warstwy:<br />
+                treść (warstwa 0),<br />
+                semantyka - HTML (warstwa 1),<br />
+                prezentacja - CSS (warstwa 2),<br />
+                interakcja - JavaScript (warstwa 3).<br />
+                Należy pamiętać, że każda z tych warstw ma swoją
+                odpowiedzialność oraz content is king!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">HTML - wstęp</h4>
+              <p class="lesson__description">
+                <b>HTML = HyperText Markup Language</b> (hipertekstowy język
+                znaczników)<br />
+                Odpowiada za treść strony internetowej, a szczególnie za jej
+                właściwe opakowanie. Treścią są teksty, nagłówki, linki, listy,
+                definicje, obrazki, video, formularze, wszystko co jest
+                nośnikiem informacji. HTML składa się ze znaczników / tagów
+                /elementów i to one są analizowane przez przeglądarkę. Budowa
+                znacznika:<br />
+                &lt;znacznik atrybut="wartość"&gt;treść&lt;/znacznik&gt;.<br />
+                Na stronach internetowych należy stosować
+                <strong>semantyczny kod</strong>, czyli taki, który ma swoje
+                znaczenie. Pliki zawierające kod HTML mają zwykle rozszerzenie
+                <b>.html</b>. Główne znaczniki, które powinny być wykorzystywane
+                przez frontendowca to:<br />
+                &lt;main&gt;,<br />
+                &lt;section&gt;,<br />
+                &lt;article&gt;,<br />
+                &lt;header&gt;,<br />
+                &lt;footer&gt;,<br />
+                &lt;h1 - h6&gt;,<br />
+                &lt;p&gt;.<br />
+                Każda sekcja powinna mieć nagłówek. Po napisaniu kodu HTML
+                zawsze należy zweryfikować jego poprawność w
+                <a
+                  class="lesson__link"
+                  href="https://validator.w3.org/nu/#textarea"
+                  target="blank"
+                >
+                  walidatorze</a
+                >.<br />
+                HTML ma następujące cechy: opakowuje i opisuje treść strony,
+                mówi przeglądarce o strukturze dokumentu, posiada swoją
+                zdefiniowaną składnię, nie jest językiem programowania, jest
+                językiem znaczników, aktualną rekomendowaną wersją jest
+                <b>5.2</b>, a całą specyfikację można znaleźć na stronie
+                <a
+                  class="lesson__link"
+                  href="https://www.w3.org/TR/html52/"
+                  target="blank"
+                  >w3c</a
+                >.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">CSS - wstęp</h4>
+              <p class="lesson__description">
+                <b>CSS = Cascading Style Sheets</b> (kaskadowe arkusze
+                stylów)<br />
+                Odpowiada za prezentację elementów HTML na ekranie, wydrukach,
+                itp. <strong>Składnia CSS to reguły</strong>. Budowa reguły
+                CSS:<br />
+                selektor {<br />
+                właściwość: wartość;<br />
+                }.<br />
+                Pliki zawierające kod CSS mają rozszerzenie <b>.css</b>.
+                Istnieje również możliwość korzystania z reguł CSS bez używania
+                zewnętrznych plików (niezalecana). Zatem można stylować poprzez
+                znacznik &lt;link&gt; lub znacznik &lt;style&gt; w sekcji
+                &lt;head&gt;.<br />
+                Pierwszą metodą stylowania jest <b>stylowanie po elementach</b>.
+                Właściwości i wartości zapisujemy po angielsku, a w przypadku
+                wartości dodatkowo można posłużyć się kodem szesnastkowym (dla
+                kanałów RGB).<br />
+                CSS ma następujące cechy: odpowiada za prezentację strony, nie
+                ma jednej wersji (rozwój modułów), potocznie mówi się, że
+                aktualna wersja to <b>3</b>. Przeglądarki potrafią różnie
+                interpretować CSS co prowadzi do tego, że pisanie stylów
+                powoduje wiele frustracji u programistów, ale jest też niezłym
+                wyzwaniem. Całą specyfikację można znaleźć na stronie
+                <a
+                  class="lesson__link"
+                  href="https://www.w3.org/TR/CSS/"
+                  target="blank"
+                  >w3c</a
+                >.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Magia programowania</h4>
+              <p class="lesson__description">
+                Programowanie można porównać do gotowania z tą różnicą, że
+                przepisy są często wymyślane na bieżąco.
+                <strong
+                  >Algorytm jest sposobem zapisu kroków, które powinny zostać
+                  wykonane w odpowiedniej kolejności.</strong
+                >
+                Zazwyczaj są one zapisywane w postaci schematu blokowego. Jako
+                programowanie można uznać zamianę ludzkiego języka na język
+                zrozumiały przez komputer. Każdy jezyk programowania ma swoją
+                składnię, gramatykę i ortografię. Na świecie jest ponad 700
+                języków programowania, natomiast w szkoleniu poznawany jest
+                jeden - <b>JavaScript</b>.<br />
+                Jest to najbardziej potężna część frontendu. Może modyfikować
+                style (CSS), HTML i treść, zatem potrafi wpływać na każdą z
+                warstw strony internetowej. Odpowiada za interakcje, wywoływanie
+                innych akcji ponad te standardowe, rozszerzając możliwości
+                zwykłych stron. Aktualnie jest jednym z najpopularniejszych
+                języków programowania na świecie.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                DevTools: podglądanie i zmienianie istniejących stron
+              </h4>
+              <p class="lesson__description">
+                Narzędzia deweloperskie w przeglądarce Google Chrome można
+                uruchomić, wybierając dowolny element strony internetowej i
+                klikając <b>prawy przycisk myszy</b>, a następnie
+                <b>Zbadaj</b> (Inspect) lub poprzez naciśnięcie klawisza
+                <b>F12</b>. Dzięki temu można podejrzeć treść, HTML oraz style.
+                Wszelkie wprowadzone zmiany na stronie są widocznie od razu, ale
+                tylko lokalnie ze względu na brak dostępu do plików źródłowych
+                (zmiany znikają w momencie odświeżenia strony). DevTools są
+                przydatne po to, aby móc szybko przetestować co można
+                ewentualnie zmienić na stronie, a później to wprowadzić do
+                edytora kodu.
+              </p>
+            </section>
+          </article>
 
-        <article class="week-summary">
-          <h3 class="week-summary__heading">Tydzień 2 (20.04.2020)</h3>
-          <section class="lesson">
-            <h4 class="lesson__title">Warstwy strony internetowej</h4>
-            <p class="lesson__description">
-              Strony internetowe posiadają następujące warstwy:<br />
-              treść (warstwa 0),<br />
-              semantyka - HTML (warstwa 1),<br />
-              prezentacja - CSS (warstwa 2),<br />
-              interakcja - JavaScript (warstwa 3).<br />
-              Należy pamiętać, że każda z tych warstw ma swoją odpowiedzialność
-              oraz content is king!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">HTML - wstęp</h4>
-            <p class="lesson__description">
-              <b>HTML = HyperText Markup Language</b> (hipertekstowy język
-              znaczników)<br />
-              Odpowiada za treść strony internetowej, a szczególnie za jej
-              właściwe opakowanie. Treścią są teksty, nagłówki, linki, listy,
-              definicje, obrazki, video, formularze, wszystko co jest nośnikiem
-              informacji. HTML składa się ze znaczników / tagów /elementów i to
-              one są analizowane przez przeglądarkę. Budowa znacznika:<br />
-              &lt;znacznik atrybut="wartość"&gt;treść&lt;/znacznik&gt;.<br />
-              Na stronach internetowych należy stosować
-              <strong>semantyczny kod</strong>, czyli taki, który ma swoje
-              znaczenie. Pliki zawierające kod HTML mają zwykle rozszerzenie
-              <b>.html</b>. Główne znaczniki, które powinny być wykorzystywane
-              przez frontendowca to:<br />
-              &lt;main&gt;,<br />
-              &lt;section&gt;,<br />
-              &lt;article&gt;,<br />
-              &lt;header&gt;,<br />
-              &lt;footer&gt;,<br />
-              &lt;h1 - h6&gt;,<br />
-              &lt;p&gt;.<br />
-              Każda sekcja powinna mieć nagłówek. Po napisaniu kodu HTML zawsze
-              należy zweryfikować jego poprawność w
-              <a
-                class="lesson__link"
-                href="https://validator.w3.org/nu/#textarea"
-                target="blank"
-              >
-                walidatorze</a
-              >.<br />
-              HTML ma następujące cechy: opakowuje i opisuje treść strony, mówi
-              przeglądarce o strukturze dokumentu, posiada swoją zdefiniowaną
-              składnię, nie jest językiem programowania, jest językiem
-              znaczników, aktualną rekomendowaną wersją jest <b>5.2</b>, a całą
-              specyfikację można znaleźć na stronie
-              <a
-                class="lesson__link"
-                href="https://www.w3.org/TR/html52/"
-                target="blank"
-                >w3c</a
-              >.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">CSS - wstęp</h4>
-            <p class="lesson__description">
-              <b>CSS = Cascading Style Sheets</b> (kaskadowe arkusze stylów)<br />
-              Odpowiada za prezentację elementów HTML na ekranie, wydrukach,
-              itp. <strong>Składnia CSS to reguły</strong>. Budowa reguły
-              CSS:<br />
-              selektor {<br />
-              właściwość: wartość;<br />
-              }.<br />
-              Pliki zawierające kod CSS mają rozszerzenie <b>.css</b>. Istnieje
-              również możliwość korzystania z reguł CSS bez używania
-              zewnętrznych plików (niezalecana). Zatem można stylować poprzez
-              znacznik &lt;link&gt; lub znacznik &lt;style&gt; w sekcji
-              &lt;head&gt;.<br />
-              Pierwszą metodą stylowania jest <b>stylowanie po elementach</b>.
-              Właściwości i wartości zapisujemy po angielsku, a w przypadku
-              wartości dodatkowo można posłużyć się kodem szesnastkowym (dla
-              kanałów RGB).<br />
-              CSS ma następujące cechy: odpowiada za prezentację strony, nie ma
-              jednej wersji (rozwój modułów), potocznie mówi się, że aktualna
-              wersja to <b>3</b>. Przeglądarki potrafią różnie interpretować CSS
-              co prowadzi do tego, że pisanie stylów powoduje wiele frustracji u
-              programistów, ale jest też niezłym wyzwaniem. Całą specyfikację
-              można znaleźć na stronie
-              <a
-                class="lesson__link"
-                href="https://www.w3.org/TR/CSS/"
-                target="blank"
-                >w3c</a
-              >.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Magia programowania</h4>
-            <p class="lesson__description">
-              Programowanie można porównać do gotowania z tą różnicą, że
-              przepisy są często wymyślane na bieżąco.
-              <strong
-                >Algorytm jest sposobem zapisu kroków, które powinny zostać
-                wykonane w odpowiedniej kolejności.</strong
-              >
-              Zazwyczaj są one zapisywane w postaci schematu blokowego. Jako
-              programowanie można uznać zamianę ludzkiego języka na język
-              zrozumiały przez komputer. Każdy jezyk programowania ma swoją
-              składnię, gramatykę i ortografię. Na świecie jest ponad 700
-              języków programowania, natomiast w szkoleniu poznawany jest jeden
-              - <b>JavaScript</b>.<br />
-              Jest to najbardziej potężna część frontendu. Może modyfikować
-              style (CSS), HTML i treść, zatem potrafi wpływać na każdą z warstw
-              strony internetowej. Odpowiada za interakcje, wywoływanie innych
-              akcji ponad te standardowe, rozszerzając możliwości zwykłych
-              stron. Aktualnie jest jednym z najpopularniejszych języków
-              programowania na świecie.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">
-              DevTools: podglądanie i zmienianie istniejących stron
-            </h4>
-            <p class="lesson__description">
-              Narzędzia deweloperskie w przeglądarce Google Chrome można
-              uruchomić, wybierając dowolny element strony internetowej i
-              klikając <b>prawy przycisk myszy</b>, a następnie
-              <b>Zbadaj</b> (Inspect) lub poprzez naciśnięcie klawisza
-              <b>F12</b>. Dzięki temu można podejrzeć treść, HTML oraz style.
-              Wszelkie wprowadzone zmiany na stronie są widocznie od razu, ale
-              tylko lokalnie ze względu na brak dostępu do plików źródłowych
-              (zmiany znikają w momencie odświeżenia strony). DevTools są
-              przydatne po to, aby móc szybko przetestować co można ewentualnie
-              zmienić na stronie, a później to wprowadzić do edytora kodu.
-            </p>
-          </section>
-        </article>
+          <article class="week-summary">
+            <h3 class="week-summary__heading">Tydzień 3 (27.04.2020)</h3>
+            <section class="lesson">
+              <h4 class="lesson__title">Kanban</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, molestias libero quas sequi nam excepturi similique
+                quaerat, aut et corrupti, voluptatum quam cupiditate laborum
+                asperiores eum id inventore mollitia ullam? Similique, quis
+                perspiciatis. Illo nobis beatae eum ex dolorum nulla iste
+                praesentium distinctio, eius molestiae iure! Perspiciatis maxime
+                aspernatur hic quam. Totam sit beatae, quasi eligendi nulla
+                sequi qui quis. Cupiditate asperiores aspernatur commodi est
+                natus qui ratione cumque, eaque officiis fugiat aliquam harum
+                excepturi facere ex odit ipsum illum, iure minima, vitae ullam.
+                Vero, perspiciatis ullam? Natus, possimus eius?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">HTML - atrybuty</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae incidunt possimus modi rerum expedita placeat.
+                Eligendi, minus consequatur! Aut quibusdam totam perferendis
+                necessitatibus ad voluptate rem eligendi. Ullam, illo a. Dolores
+                vitae corporis aspernatur. Quam, quos minima. Asperiores fugit
+                aliquam est sint tempore non tempora laboriosam aliquid ea
+                voluptatibus magni doloremque, magnam cum aperiam, explicabo
+                laudantium optio placeat veritatis iste. Laudantium nesciunt
+                totam maiores, recusandae dolores iste distinctio amet dolore
+                nulla provident magnam veniam libero, mollitia consequatur id!
+                Iure, optio maiores commodi exercitationem officiis perspiciatis
+                vero nulla laborum possimus deserunt.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Opowieść o wężu, kebabie, wielbłądzie i Pascalu
+              </h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Exercitationem quas debitis accusantium velit beatae amet at
+                illo facere fugiat dicta facilis, sequi, asperiores deserunt
+                assumenda perferendis? Deserunt ipsum dolores enim. Explicabo
+                minima quaerat laboriosam aspernatur quae, illum velit! Nobis
+                dicta illo atque cupiditate commodi sint praesentium, earum
+                maxime autem ipsum dolores odit labore consectetur, aperiam
+                nulla fugit vel laudantium modi. Reiciendis commodi obcaecati
+                explicabo? Architecto autem suscipit minima eius reiciendis,
+                eveniet rem nostrum, ratione molestiae inventore earum sapiente
+                ullam, itaque dignissimos blanditiis est numquam. Molestiae
+                temporibus reiciendis accusamus beatae placeat?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">CSS - klasy</h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus harum nobis cupiditate laborum eius veniam facere,
+                dolore accusantium odio ad ducimus repellat, aperiam voluptas
+                repellendus nesciunt voluptate neque, perspiciatis quis.
+                Mollitia quia omnis voluptatem, voluptate fugiat expedita quo
+                iusto minus, consequatur nostrum nihil sed ipsam repudiandae
+                excepturi quaerat sunt doloribus molestias nesciunt, sapiente
+                eveniet est neque autem quibusdam dolorem. Ipsam? Ratione
+                deleniti ipsam aspernatur repudiandae officia non, quasi commodi
+                laboriosam voluptas nam porro, repellendus ipsa accusamus eius
+                voluptate, aperiam beatae ad amet atque? Dolorum esse, facere ab
+                blanditiis vero rerum?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Jak działa Internet i przeglądarka?</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo consequatur facere cum. Iusto temporibus delectus
+                quas, vero dicta voluptates eius ad. Error ut exercitationem
+                fuga id quas, provident est fugit. Possimus dolor ratione
+                exercitationem nesciunt facere, temporibus eos quasi in maxime
+                rem obcaecati assumenda deserunt, nisi quidem? Nisi nulla,
+                obcaecati pariatur accusamus sunt et, voluptatibus numquam
+                aperiam quia, quod enim! Consequatur ipsa vel culpa ipsam
+                provident error. Modi nemo perferendis ea necessitatibus
+                similique explicabo suscipit deserunt quaerat quas adipisci!
+                Beatae debitis provident sunt reiciendis quasi ratione tenetur
+                totam similique aperiam.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">JavaScript</h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+                harum quam maxime assumenda dignissimos magni, dolore vel
+                incidunt optio molestiae libero asperiores veniam ducimus
+                blanditiis aspernatur. Dolorum delectus nisi sed! Quas sapiente
+                nemo dolor magnam et quis, totam iusto nihil sint cumque ad, sit
+                illum fugiat perspiciatis deleniti quia. Voluptatum consequuntur
+                excepturi quasi sapiente tempore? Eligendi ad magni aspernatur
+                amet! Excepturi error adipisci illo enim saepe unde, dolorum
+                ipsam eos repudiandae velit voluptas voluptate doloremque quam
+                eius. Magni adipisci asperiores eius aliquam doloribus. Cumque
+                vel sed in, ratione libero nisi.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Terminal</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente aperiam, quia laudantium quidem dolor sed minus quo
+                nisi repellat modi similique voluptas ea doloribus numquam,
+                reiciendis dicta ab! Magnam, quia. Inventore odit debitis ea?
+                Modi deleniti mollitia esse, aspernatur possimus animi quisquam!
+                Unde, ab quo error omnis, at aspernatur ratione, quam ea quidem
+                ex beatae deserunt corrupti minus corporis quas! Aspernatur
+                fugit explicabo eveniet est aliquid dicta tempore ipsum. Nobis
+                asperiores atque ab est excepturi, incidunt sequi eius accusamus
+                quam! Itaque eligendi incidunt in voluptatibus, deleniti optio
+                laborum sint molestiae.
+              </p>
+            </section>
+          </article>
 
-        <article class="week-summary">
-          <h3 class="week-summary__heading">Tydzień 3 (27.04.2020)</h3>
-          <section class="lesson">
-            <h4 class="lesson__title">Kanban</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusamus, molestias libero quas sequi nam excepturi similique
-              quaerat, aut et corrupti, voluptatum quam cupiditate laborum
-              asperiores eum id inventore mollitia ullam? Similique, quis
-              perspiciatis. Illo nobis beatae eum ex dolorum nulla iste
-              praesentium distinctio, eius molestiae iure! Perspiciatis maxime
-              aspernatur hic quam. Totam sit beatae, quasi eligendi nulla sequi
-              qui quis. Cupiditate asperiores aspernatur commodi est natus qui
-              ratione cumque, eaque officiis fugiat aliquam harum excepturi
-              facere ex odit ipsum illum, iure minima, vitae ullam. Vero,
-              perspiciatis ullam? Natus, possimus eius?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">HTML - atrybuty</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              incidunt possimus modi rerum expedita placeat. Eligendi, minus
-              consequatur! Aut quibusdam totam perferendis necessitatibus ad
-              voluptate rem eligendi. Ullam, illo a. Dolores vitae corporis
-              aspernatur. Quam, quos minima. Asperiores fugit aliquam est sint
-              tempore non tempora laboriosam aliquid ea voluptatibus magni
-              doloremque, magnam cum aperiam, explicabo laudantium optio placeat
-              veritatis iste. Laudantium nesciunt totam maiores, recusandae
-              dolores iste distinctio amet dolore nulla provident magnam veniam
-              libero, mollitia consequatur id! Iure, optio maiores commodi
-              exercitationem officiis perspiciatis vero nulla laborum possimus
-              deserunt.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">
-              Opowieść o wężu, kebabie, wielbłądzie i Pascalu
-            </h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Exercitationem quas debitis accusantium velit beatae amet at illo
-              facere fugiat dicta facilis, sequi, asperiores deserunt assumenda
-              perferendis? Deserunt ipsum dolores enim. Explicabo minima quaerat
-              laboriosam aspernatur quae, illum velit! Nobis dicta illo atque
-              cupiditate commodi sint praesentium, earum maxime autem ipsum
-              dolores odit labore consectetur, aperiam nulla fugit vel
-              laudantium modi. Reiciendis commodi obcaecati explicabo?
-              Architecto autem suscipit minima eius reiciendis, eveniet rem
-              nostrum, ratione molestiae inventore earum sapiente ullam, itaque
-              dignissimos blanditiis est numquam. Molestiae temporibus
-              reiciendis accusamus beatae placeat?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">CSS - klasy</h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              harum nobis cupiditate laborum eius veniam facere, dolore
-              accusantium odio ad ducimus repellat, aperiam voluptas repellendus
-              nesciunt voluptate neque, perspiciatis quis. Mollitia quia omnis
-              voluptatem, voluptate fugiat expedita quo iusto minus, consequatur
-              nostrum nihil sed ipsam repudiandae excepturi quaerat sunt
-              doloribus molestias nesciunt, sapiente eveniet est neque autem
-              quibusdam dolorem. Ipsam? Ratione deleniti ipsam aspernatur
-              repudiandae officia non, quasi commodi laboriosam voluptas nam
-              porro, repellendus ipsa accusamus eius voluptate, aperiam beatae
-              ad amet atque? Dolorum esse, facere ab blanditiis vero rerum?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Jak działa Internet i przeglądarka?</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              consequatur facere cum. Iusto temporibus delectus quas, vero dicta
-              voluptates eius ad. Error ut exercitationem fuga id quas,
-              provident est fugit. Possimus dolor ratione exercitationem
-              nesciunt facere, temporibus eos quasi in maxime rem obcaecati
-              assumenda deserunt, nisi quidem? Nisi nulla, obcaecati pariatur
-              accusamus sunt et, voluptatibus numquam aperiam quia, quod enim!
-              Consequatur ipsa vel culpa ipsam provident error. Modi nemo
-              perferendis ea necessitatibus similique explicabo suscipit
-              deserunt quaerat quas adipisci! Beatae debitis provident sunt
-              reiciendis quasi ratione tenetur totam similique aperiam.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">JavaScript</h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
-              harum quam maxime assumenda dignissimos magni, dolore vel incidunt
-              optio molestiae libero asperiores veniam ducimus blanditiis
-              aspernatur. Dolorum delectus nisi sed! Quas sapiente nemo dolor
-              magnam et quis, totam iusto nihil sint cumque ad, sit illum fugiat
-              perspiciatis deleniti quia. Voluptatum consequuntur excepturi
-              quasi sapiente tempore? Eligendi ad magni aspernatur amet!
-              Excepturi error adipisci illo enim saepe unde, dolorum ipsam eos
-              repudiandae velit voluptas voluptate doloremque quam eius. Magni
-              adipisci asperiores eius aliquam doloribus. Cumque vel sed in,
-              ratione libero nisi.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Terminal</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              aperiam, quia laudantium quidem dolor sed minus quo nisi repellat
-              modi similique voluptas ea doloribus numquam, reiciendis dicta ab!
-              Magnam, quia. Inventore odit debitis ea? Modi deleniti mollitia
-              esse, aspernatur possimus animi quisquam! Unde, ab quo error
-              omnis, at aspernatur ratione, quam ea quidem ex beatae deserunt
-              corrupti minus corporis quas! Aspernatur fugit explicabo eveniet
-              est aliquid dicta tempore ipsum. Nobis asperiores atque ab est
-              excepturi, incidunt sequi eius accusamus quam! Itaque eligendi
-              incidunt in voluptatibus, deleniti optio laborum sint molestiae.
-            </p>
-          </section>
-        </article>
+          <article class="week-summary week-summary--special">
+            <h3 class="week-summary__heading">Tydzień 4 (04.05.2020)</h3>
+            <section class="lesson">
+              <h4 class="lesson__title">Jest GIT!</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus, molestias libero quas sequi nam excepturi similique
+                quaerat, aut et corrupti, voluptatum quam cupiditate laborum
+                asperiores eum id inventore mollitia ullam? Similique, quis
+                perspiciatis. Illo nobis beatae eum ex dolorum nulla iste
+                praesentium distinctio, eius molestiae iure! Perspiciatis maxime
+                aspernatur hic quam. Totam sit beatae, quasi eligendi nulla
+                sequi qui quis. Cupiditate asperiores aspernatur commodi est
+                natus qui ratione cumque, eaque officiis fugiat aliquam harum
+                excepturi facere ex odit ipsum illum, iure minima, vitae ullam.
+                Vero, perspiciatis ullam? Natus, possimus eius?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">GitHub</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae incidunt possimus modi rerum expedita placeat.
+                Eligendi, minus consequatur! Aut quibusdam totam perferendis
+                necessitatibus ad voluptate rem eligendi. Ullam, illo a. Dolores
+                vitae corporis aspernatur. Quam, quos minima. Asperiores fugit
+                aliquam est sint tempore non tempora laboriosam aliquid ea
+                voluptatibus magni doloremque, magnam cum aperiam, explicabo
+                laudantium optio placeat veritatis iste. Laudantium nesciunt
+                totam maiores, recusandae dolores iste distinctio amet dolore
+                nulla provident magnam veniam libero, mollitia consequatur id!
+                Iure, optio maiores commodi exercitationem officiis perspiciatis
+                vero nulla laborum possimus deserunt.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Życie w pudełku: Display, wymiary i overflow
+              </h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Exercitationem quas debitis accusantium velit beatae amet at
+                illo facere fugiat dicta facilis, sequi, asperiores deserunt
+                assumenda perferendis? Deserunt ipsum dolores enim. Explicabo
+                minima quaerat laboriosam aspernatur quae, illum velit! Nobis
+                dicta illo atque cupiditate commodi sint praesentium, earum
+                maxime autem ipsum dolores odit labore consectetur, aperiam
+                nulla fugit vel laudantium modi. Reiciendis commodi obcaecati
+                explicabo? Architecto autem suscipit minima eius reiciendis,
+                eveniet rem nostrum, ratione molestiae inventore earum sapiente
+                ullam, itaque dignissimos blanditiis est numquam. Molestiae
+                temporibus reiciendis accusamus beatae placeat?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Życie w pudełku: Jednostki</h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus harum nobis cupiditate laborum eius veniam facere,
+                dolore accusantium odio ad ducimus repellat, aperiam voluptas
+                repellendus nesciunt voluptate neque, perspiciatis quis.
+                Mollitia quia omnis voluptatem, voluptate fugiat expedita quo
+                iusto minus, consequatur nostrum nihil sed ipsam repudiandae
+                excepturi quaerat sunt doloribus molestias nesciunt, sapiente
+                eveniet est neque autem quibusdam dolorem. Ipsam? Ratione
+                deleniti ipsam aspernatur repudiandae officia non, quasi commodi
+                laboriosam voluptas nam porro, repellendus ipsa accusamus eius
+                voluptate, aperiam beatae ad amet atque? Dolorum esse, facere ab
+                blanditiis vero rerum?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Życie w pudełku: Box model (padding / border / margin)
+              </h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo consequatur facere cum. Iusto temporibus delectus
+                quas, vero dicta voluptates eius ad. Error ut exercitationem
+                fuga id quas, provident est fugit. Possimus dolor ratione
+                exercitationem nesciunt facere, temporibus eos quasi in maxime
+                rem obcaecati assumenda deserunt, nisi quidem? Nisi nulla,
+                obcaecati pariatur accusamus sunt et, voluptatibus numquam
+                aperiam quia, quod enim! Consequatur ipsa vel culpa ipsam
+                provident error. Modi nemo perferendis ea necessitatibus
+                similique explicabo suscipit deserunt quaerat quas adipisci!
+                Beatae debitis provident sunt reiciendis quasi ratione tenetur
+                totam similique aperiam.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Życie w pudełku: box-sizing</h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+                harum quam maxime assumenda dignissimos magni, dolore vel
+                incidunt optio molestiae libero asperiores veniam ducimus
+                blanditiis aspernatur. Dolorum delectus nisi sed! Quas sapiente
+                nemo dolor magnam et quis, totam iusto nihil sint cumque ad, sit
+                illum fugiat perspiciatis deleniti quia. Voluptatum consequuntur
+                excepturi quasi sapiente tempore? Eligendi ad magni aspernatur
+                amet! Excepturi error adipisci illo enim saepe unde, dolorum
+                ipsam eos repudiandae velit voluptas voluptate doloremque quam
+                eius. Magni adipisci asperiores eius aliquam doloribus. Cumque
+                vel sed in, ratione libero nisi.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Życie w pudełku: position</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente aperiam, quia laudantium quidem dolor sed minus quo
+                nisi repellat modi similique voluptas ea doloribus numquam,
+                reiciendis dicta ab! Magnam, quia. Inventore odit debitis ea?
+                Modi deleniti mollitia esse, aspernatur possimus animi quisquam!
+                Unde, ab quo error omnis, at aspernatur ratione, quam ea quidem
+                ex beatae deserunt corrupti minus corporis quas! Aspernatur
+                fugit explicabo eveniet est aliquid dicta tempore ipsum. Nobis
+                asperiores atque ab est excepturi, incidunt sequi eius accusamus
+                quam! Itaque eligendi incidunt in voluptatibus, deleniti optio
+                laborum sint molestiae.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Życie w pudełku: float</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quasi illo quam veritatis aspernatur praesentium quaerat
+                provident laboriosam, inventore minima reprehenderit porro,
+                obcaecati, delectus quae tempora. Blanditiis nobis nihil
+                laborum. Explicabo, alias tempore! Animi fuga odit adipisci
+                pariatur magnam architecto quasi consectetur? Enim doloribus
+                officiis, id alias adipisci numquam eos earum, quod pariatur hic
+                nisi magni possimus quisquam. Ad, aliquid? Iure debitis,
+                perferendis nesciunt quas nemo quidem eaque nam obcaecati
+                asperiores recusandae error accusantium quod totam vitae? Nisi
+                vitae asperiores rem et hic ad mollitia quos libero distinctio,
+                maiores id!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">JS: Typy danych i immutability</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                itaque voluptatem illum, velit eligendi quis! Error itaque
+                dolor, dolorem esse ab nostrum blanditiis veritatis
+                reprehenderit perferendis! Ad porro ipsum debitis! Earum qui,
+                totam facilis minus asperiores praesentium cumque quasi nemo
+                quae a modi minima sit, iusto impedit maxime nisi assumenda.
+                Fuga doloribus dolore rerum in repellendus mollitia sit
+                voluptatem impedit. Fugiat, recusandae autem, eos asperiores
+                maiores harum pariatur officia tempore dolorum nobis amet qui
+                debitis optio quas eligendi, ex esse veritatis reprehenderit?
+                Ratione impedit quas tenetur inventore, eum nesciunt placeat!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Code: formatowanie kodu i lokalny serwer
+              </h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Corporis libero, possimus nesciunt placeat fuga itaque maiores
+                doloribus doloremque quidem aliquid veniam vel inventore eveniet
+                magnam, accusantium repellendus rerum! Laboriosam, eaque! Quam
+                id vero asperiores? Officiis saepe repellendus consequatur!
+                Praesentium aspernatur quo molestias soluta culpa officia nisi
+                voluptatibus! Aliquid error repellat ipsa atque distinctio
+                saepe, quasi a placeat quisquam libero similique. Illo eos
+                expedita ratione, similique libero magni, tempore excepturi
+                neque aspernatur eius voluptatem minus hic dicta ad voluptas
+                doloremque culpa maiores itaque impedit illum eligendi! A
+                distinctio culpa dolore nostrum!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Block - Element - Modifier</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                quo, deleniti ullam deserunt dignissimos provident pariatur
+                alias tempora excepturi, consectetur at, cupiditate velit? Nam
+                repellendus nesciunt reprehenderit voluptates est voluptatem.
+                Obcaecati dignissimos nisi veritatis error sint alias amet fugit
+                nostrum labore! Mollitia quisquam, eius sapiente assumenda,
+                minus voluptatem provident rem accusantium dicta reiciendis illo
+                earum. Consequuntur, aut? Dolorum, officiis nostrum. Ipsa
+                debitis quae harum blanditiis hic commodi, quos, est ad nemo
+                quod labore neque laudantium molestiae? Obcaecati quos adipisci
+                ex. Saepe quod doloribus dolores dicta consequuntur
+                necessitatibus voluptates dolorum quidem.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">DOMowe przedszkole</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ratione maiores incidunt velit, iusto, magnam veniam quis,
+                beatae enim unde officia excepturi molestias. Quia quasi
+                facilis, accusamus illo est natus nemo! Sint aliquam,
+                reprehenderit possimus provident est perferendis doloremque ea
+                maiores eius porro labore, ullam repudiandae perspiciatis
+                reiciendis culpa debitis dolores numquam consectetur? Eaque ipsa
+                maiores adipisci vitae assumenda, sapiente amet. Repellat,
+                reiciendis voluptatum dolorum, deleniti vero quasi voluptates,
+                laudantium quas iure unde eius corrupti. Veniam aspernatur vel
+                natus voluptas, asperiores pariatur obcaecati consequuntur ad
+                maxime quo excepturi eius dolore in!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Frontend z perspektywy juniora</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                minima velit libero ex autem voluptatibus aperiam alias,
+                reprehenderit aliquid, sapiente hic blanditiis possimus,
+                mollitia perspiciatis explicabo eveniet ad ducimus neque. Est
+                esse molestiae quae illum iste earum quidem nulla eius ut vitae
+                corrupti, nemo ipsam pariatur assumenda vero deserunt optio
+                voluptas beatae eaque a exercitationem deleniti facere hic
+                officiis. Animi. Error dignissimos ad corrupti? Perspiciatis
+                minus vero corrupti nisi dolorem at, voluptatem aspernatur
+                exercitationem unde iusto dolores. Atque accusamus, explicabo
+                facere expedita sapiente soluta aut nulla dolores libero iusto
+                veniam?
+              </p>
+            </section>
+          </article>
 
-        <article class="week-summary week-summary--special">
-          <h3 class="week-summary__heading">Tydzień 4 (04.05.2020)</h3>
-          <section class="lesson">
-            <h4 class="lesson__title">Jest GIT!</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusamus, molestias libero quas sequi nam excepturi similique
-              quaerat, aut et corrupti, voluptatum quam cupiditate laborum
-              asperiores eum id inventore mollitia ullam? Similique, quis
-              perspiciatis. Illo nobis beatae eum ex dolorum nulla iste
-              praesentium distinctio, eius molestiae iure! Perspiciatis maxime
-              aspernatur hic quam. Totam sit beatae, quasi eligendi nulla sequi
-              qui quis. Cupiditate asperiores aspernatur commodi est natus qui
-              ratione cumque, eaque officiis fugiat aliquam harum excepturi
-              facere ex odit ipsum illum, iure minima, vitae ullam. Vero,
-              perspiciatis ullam? Natus, possimus eius?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">GitHub</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              incidunt possimus modi rerum expedita placeat. Eligendi, minus
-              consequatur! Aut quibusdam totam perferendis necessitatibus ad
-              voluptate rem eligendi. Ullam, illo a. Dolores vitae corporis
-              aspernatur. Quam, quos minima. Asperiores fugit aliquam est sint
-              tempore non tempora laboriosam aliquid ea voluptatibus magni
-              doloremque, magnam cum aperiam, explicabo laudantium optio placeat
-              veritatis iste. Laudantium nesciunt totam maiores, recusandae
-              dolores iste distinctio amet dolore nulla provident magnam veniam
-              libero, mollitia consequatur id! Iure, optio maiores commodi
-              exercitationem officiis perspiciatis vero nulla laborum possimus
-              deserunt.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">
-              Życie w pudełku: Display, wymiary i overflow
-            </h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Exercitationem quas debitis accusantium velit beatae amet at illo
-              facere fugiat dicta facilis, sequi, asperiores deserunt assumenda
-              perferendis? Deserunt ipsum dolores enim. Explicabo minima quaerat
-              laboriosam aspernatur quae, illum velit! Nobis dicta illo atque
-              cupiditate commodi sint praesentium, earum maxime autem ipsum
-              dolores odit labore consectetur, aperiam nulla fugit vel
-              laudantium modi. Reiciendis commodi obcaecati explicabo?
-              Architecto autem suscipit minima eius reiciendis, eveniet rem
-              nostrum, ratione molestiae inventore earum sapiente ullam, itaque
-              dignissimos blanditiis est numquam. Molestiae temporibus
-              reiciendis accusamus beatae placeat?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Życie w pudełku: Jednostki</h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-              harum nobis cupiditate laborum eius veniam facere, dolore
-              accusantium odio ad ducimus repellat, aperiam voluptas repellendus
-              nesciunt voluptate neque, perspiciatis quis. Mollitia quia omnis
-              voluptatem, voluptate fugiat expedita quo iusto minus, consequatur
-              nostrum nihil sed ipsam repudiandae excepturi quaerat sunt
-              doloribus molestias nesciunt, sapiente eveniet est neque autem
-              quibusdam dolorem. Ipsam? Ratione deleniti ipsam aspernatur
-              repudiandae officia non, quasi commodi laboriosam voluptas nam
-              porro, repellendus ipsa accusamus eius voluptate, aperiam beatae
-              ad amet atque? Dolorum esse, facere ab blanditiis vero rerum?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">
-              Życie w pudełku: Box model (padding / border / margin)
-            </h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              consequatur facere cum. Iusto temporibus delectus quas, vero dicta
-              voluptates eius ad. Error ut exercitationem fuga id quas,
-              provident est fugit. Possimus dolor ratione exercitationem
-              nesciunt facere, temporibus eos quasi in maxime rem obcaecati
-              assumenda deserunt, nisi quidem? Nisi nulla, obcaecati pariatur
-              accusamus sunt et, voluptatibus numquam aperiam quia, quod enim!
-              Consequatur ipsa vel culpa ipsam provident error. Modi nemo
-              perferendis ea necessitatibus similique explicabo suscipit
-              deserunt quaerat quas adipisci! Beatae debitis provident sunt
-              reiciendis quasi ratione tenetur totam similique aperiam.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Życie w pudełku: box-sizing</h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
-              harum quam maxime assumenda dignissimos magni, dolore vel incidunt
-              optio molestiae libero asperiores veniam ducimus blanditiis
-              aspernatur. Dolorum delectus nisi sed! Quas sapiente nemo dolor
-              magnam et quis, totam iusto nihil sint cumque ad, sit illum fugiat
-              perspiciatis deleniti quia. Voluptatum consequuntur excepturi
-              quasi sapiente tempore? Eligendi ad magni aspernatur amet!
-              Excepturi error adipisci illo enim saepe unde, dolorum ipsam eos
-              repudiandae velit voluptas voluptate doloremque quam eius. Magni
-              adipisci asperiores eius aliquam doloribus. Cumque vel sed in,
-              ratione libero nisi.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Życie w pudełku: position</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              aperiam, quia laudantium quidem dolor sed minus quo nisi repellat
-              modi similique voluptas ea doloribus numquam, reiciendis dicta ab!
-              Magnam, quia. Inventore odit debitis ea? Modi deleniti mollitia
-              esse, aspernatur possimus animi quisquam! Unde, ab quo error
-              omnis, at aspernatur ratione, quam ea quidem ex beatae deserunt
-              corrupti minus corporis quas! Aspernatur fugit explicabo eveniet
-              est aliquid dicta tempore ipsum. Nobis asperiores atque ab est
-              excepturi, incidunt sequi eius accusamus quam! Itaque eligendi
-              incidunt in voluptatibus, deleniti optio laborum sint molestiae.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Życie w pudełku: float</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-              quasi illo quam veritatis aspernatur praesentium quaerat provident
-              laboriosam, inventore minima reprehenderit porro, obcaecati,
-              delectus quae tempora. Blanditiis nobis nihil laborum. Explicabo,
-              alias tempore! Animi fuga odit adipisci pariatur magnam architecto
-              quasi consectetur? Enim doloribus officiis, id alias adipisci
-              numquam eos earum, quod pariatur hic nisi magni possimus quisquam.
-              Ad, aliquid? Iure debitis, perferendis nesciunt quas nemo quidem
-              eaque nam obcaecati asperiores recusandae error accusantium quod
-              totam vitae? Nisi vitae asperiores rem et hic ad mollitia quos
-              libero distinctio, maiores id!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">JS: Typy danych i immutability</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              itaque voluptatem illum, velit eligendi quis! Error itaque dolor,
-              dolorem esse ab nostrum blanditiis veritatis reprehenderit
-              perferendis! Ad porro ipsum debitis! Earum qui, totam facilis
-              minus asperiores praesentium cumque quasi nemo quae a modi minima
-              sit, iusto impedit maxime nisi assumenda. Fuga doloribus dolore
-              rerum in repellendus mollitia sit voluptatem impedit. Fugiat,
-              recusandae autem, eos asperiores maiores harum pariatur officia
-              tempore dolorum nobis amet qui debitis optio quas eligendi, ex
-              esse veritatis reprehenderit? Ratione impedit quas tenetur
-              inventore, eum nesciunt placeat!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">
-              Code: formatowanie kodu i lokalny serwer
-            </h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-              libero, possimus nesciunt placeat fuga itaque maiores doloribus
-              doloremque quidem aliquid veniam vel inventore eveniet magnam,
-              accusantium repellendus rerum! Laboriosam, eaque! Quam id vero
-              asperiores? Officiis saepe repellendus consequatur! Praesentium
-              aspernatur quo molestias soluta culpa officia nisi voluptatibus!
-              Aliquid error repellat ipsa atque distinctio saepe, quasi a
-              placeat quisquam libero similique. Illo eos expedita ratione,
-              similique libero magni, tempore excepturi neque aspernatur eius
-              voluptatem minus hic dicta ad voluptas doloremque culpa maiores
-              itaque impedit illum eligendi! A distinctio culpa dolore nostrum!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Block - Element - Modifier</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quo,
-              deleniti ullam deserunt dignissimos provident pariatur alias
-              tempora excepturi, consectetur at, cupiditate velit? Nam
-              repellendus nesciunt reprehenderit voluptates est voluptatem.
-              Obcaecati dignissimos nisi veritatis error sint alias amet fugit
-              nostrum labore! Mollitia quisquam, eius sapiente assumenda, minus
-              voluptatem provident rem accusantium dicta reiciendis illo earum.
-              Consequuntur, aut? Dolorum, officiis nostrum. Ipsa debitis quae
-              harum blanditiis hic commodi, quos, est ad nemo quod labore neque
-              laudantium molestiae? Obcaecati quos adipisci ex. Saepe quod
-              doloribus dolores dicta consequuntur necessitatibus voluptates
-              dolorum quidem.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">DOMowe przedszkole</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-              maiores incidunt velit, iusto, magnam veniam quis, beatae enim
-              unde officia excepturi molestias. Quia quasi facilis, accusamus
-              illo est natus nemo! Sint aliquam, reprehenderit possimus
-              provident est perferendis doloremque ea maiores eius porro labore,
-              ullam repudiandae perspiciatis reiciendis culpa debitis dolores
-              numquam consectetur? Eaque ipsa maiores adipisci vitae assumenda,
-              sapiente amet. Repellat, reiciendis voluptatum dolorum, deleniti
-              vero quasi voluptates, laudantium quas iure unde eius corrupti.
-              Veniam aspernatur vel natus voluptas, asperiores pariatur
-              obcaecati consequuntur ad maxime quo excepturi eius dolore in!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Frontend z perspektywy juniora</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              minima velit libero ex autem voluptatibus aperiam alias,
-              reprehenderit aliquid, sapiente hic blanditiis possimus, mollitia
-              perspiciatis explicabo eveniet ad ducimus neque. Est esse
-              molestiae quae illum iste earum quidem nulla eius ut vitae
-              corrupti, nemo ipsam pariatur assumenda vero deserunt optio
-              voluptas beatae eaque a exercitationem deleniti facere hic
-              officiis. Animi. Error dignissimos ad corrupti? Perspiciatis minus
-              vero corrupti nisi dolorem at, voluptatem aspernatur
-              exercitationem unde iusto dolores. Atque accusamus, explicabo
-              facere expedita sapiente soluta aut nulla dolores libero iusto
-              veniam?
-            </p>
-          </section>
-        </article>
+          <article class="week-summary">
+            <h3 class="week-summary__heading">Tydzień 5 (11.05.2020)</h3>
+            <section class="lesson">
+              <h4 class="lesson__title">Klan</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus omnis autem rem tempore, unde obcaecati reiciendis
+                consectetur voluptatum eligendi id totam voluptatibus voluptatem
+                voluptas sed expedita quam atque libero fugiat! Quod ab aliquid
+                non animi soluta nulla reiciendis laudantium? Dolore maxime
+                magni ullam quod dolorum et ipsa numquam ad qui dolores corrupti
+                ducimus laborum incidunt vero vel saepe, aliquam illum.
+                Provident magnam, repudiandae perferendis dicta unde ut neque.
+                Adipisci similique, laboriosam illum eligendi laudantium quis
+                voluptatem ullam praesentium possimus mollitia in sapiente
+                officiis odio asperiores ipsam corrupti, nostrum architecto.
+                Rem?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">JS: funkcje</h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+                atque praesentium itaque debitis cupiditate, pariatur
+                repudiandae ipsa maxime necessitatibus modi delectus cum
+                molestiae at dolore enim recusandae. Iste, illum? Cupiditate!
+                Quis repellat nesciunt iste facere cum iusto! Unde, laboriosam
+                porro natus dolorum aspernatur fugiat harum eaque quisquam,
+                quibusdam quo accusamus. Iste eius unde quod eveniet, reiciendis
+                nesciunt esse quisquam! Autem? Facere provident voluptas vel
+                autem? Quod nihil iusto repudiandae culpa rem, reiciendis
+                maiores, amet accusamus animi perferendis, perspiciatis ex?
+                Ipsum consequatur eligendi id obcaecati vitae accusamus et.
+                Iusto, nostrum quae.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">JS: Obiekt</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                voluptate aspernatur cum dolorum rerum soluta sequi est, debitis
+                laudantium officiis nisi autem ab amet inventore iusto ipsam
+                dolores minus esse! Iste praesentium minima repellendus
+                perspiciatis ipsum velit, accusantium ducimus quo sed veritatis
+                numquam aut quibusdam similique sit temporibus libero nisi
+                aliquid! Itaque cum est consequatur dolorem minima iste sed
+                laborum. Qui delectus minima quam, sunt sint in ratione neque
+                distinctio aspernatur natus obcaecati dolores veniam vitae a sed
+                ipsum quibusdam, dolor corporis libero expedita, quae repellat.
+                Ducimus neque aliquid soluta.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">JS: Immutability w obiektach</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nesciunt, id. Repudiandae, quis vel saepe illum tempore,
+                reiciendis aliquid velit repellendus laborum, eligendi maxime
+                voluptatibus accusantium vero ab aliquam nihil sint? Rem,
+                asperiores vero expedita ut minus voluptas nobis odio ipsum
+                impedit, aliquam nihil corporis error? Debitis deleniti,
+                doloremque, magnam laborum, delectus fugit iure blanditiis illum
+                fugiat nostrum cupiditate cum odio! At dignissimos quos, amet,
+                sapiente vel adipisci quaerat deserunt nulla perspiciatis alias
+                magni illum repellat, magnam molestiae eligendi libero tempora
+                voluptates? Vitae esse et itaque odio perspiciatis temporibus
+                vel mollitia!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">U mnie (nie) działa</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                fugiat aspernatur maxime voluptates rerum! Laboriosam neque
+                dolores dolore harum a explicabo veniam, assumenda ratione,
+                autem, totam debitis esse quidem voluptatum. Veritatis similique
+                cupiditate doloribus! Error, quas porro temporibus repudiandae
+                laboriosam necessitatibus odio quae provident. Nihil dolorem
+                ullam, placeat nemo eum voluptatem eos dolore ratione alias
+                soluta et illo officia libero? Magni voluptates voluptatibus
+                eligendi aperiam distinctio ducimus voluptate eum laboriosam
+                animi doloribus autem voluptatem sed totam dolore neque a
+                voluptatum libero aspernatur eaque, ratione inventore rem
+                explicabo atque error. Ea.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">HTML: Listy, definicje, tabele</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, nemo voluptas ipsum ipsa voluptates cumque est debitis
+                illum sed ex labore ducimus? Aliquid molestias maiores illum,
+                quis perferendis fuga possimus! Odit ipsa sequi voluptate rerum
+                culpa officiis iusto, alias aliquam natus consectetur eius
+                exercitationem id autem consequatur ullam libero provident illum
+                voluptatibus expedita. Facere nisi voluptatum soluta qui libero
+                nemo. Sunt aliquid, corrupti aliquam modi tempora nesciunt
+                possimus quaerat sit quisquam doloribus ut facilis? Saepe eos,
+                aperiam at cumque ad in eius deleniti accusantium doloremque
+                sapiente est totam nam nulla!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Normalizacja vs reset</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                labore ipsum explicabo! Provident sunt eos eligendi molestias
+                excepturi ex a, eveniet, labore vero nemo voluptatem aperiam
+                saepe ipsa in explicabo. Ipsam voluptates modi, quaerat est
+                tenetur dolores odit amet cum ad cumque aspernatur consequatur
+                labore quam dicta magnam iusto, libero excepturi id dignissimos
+                dolore delectus reiciendis molestiae quas mollitia. Amet. Animi,
+                adipisci aliquam cupiditate exercitationem assumenda aut sunt.
+                Corrupti velit possimus soluta blanditiis nesciunt vero nam
+                error non expedita vel. Minus ab odio voluptates corrupti
+                eligendi quia accusamus accusantium autem.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Flexbox</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis cum totam laboriosam porro quaerat dolores voluptatem
+                corrupti illum velit enim, quidem mollitia soluta! Eos
+                voluptatibus in eum sint reprehenderit. Eligendi. Iusto
+                voluptate eaque omnis voluptates blanditiis hic consequatur
+                dicta dolorem ab. Quibusdam voluptatem error in itaque deleniti,
+                ullam eos natus commodi quisquam explicabo tenetur ut. Tempore
+                placeat laudantium saepe expedita? Magnam necessitatibus fugiat
+                consequatur reiciendis voluptatem molestias sint hic ea quae,
+                culpa qui placeat corrupti consectetur. Tempore incidunt
+                temporibus quia, ipsa alias saepe distinctio debitis quis cumque
+                ducimus excepturi numquam!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Tła</h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deleniti tenetur perferendis optio quod sapiente voluptas. Sit
+                magni voluptates vel facere totam, quasi debitis obcaecati
+                maxime eos nostrum dolorem impedit dolorum. Facere minus rem
+                sapiente. Dolor quam perspiciatis itaque consequatur harum unde
+                ea sed cumque omnis odit rem velit inventore accusantium modi
+                asperiores amet esse sapiente, quod minima saepe qui culpa!
+                Magnam nostrum voluptatum perspiciatis minima beatae consequatur
+                hic laboriosam, atque tenetur, minus iste eveniet, eum eos
+                suscipit? Velit temporibus dolore saepe, quo, exercitationem at
+                doloribus eveniet unde laudantium dolores perferendis.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Grafik cięcie - też zajęcie</h4>
+              <p class="lesson__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem temporibus dicta earum deleniti ex? Debitis
+                facere libero corrupti odio ipsa. Quod assumenda accusamus
+                debitis velit libero omnis corporis porro repellendus! Nobis
+                pariatur exercitationem nulla mollitia iure sit consectetur.
+                Itaque vel facere reiciendis ipsa, consectetur iure totam libero
+                ab laudantium culpa, alias sint, eos fugiat debitis repellat
+                illo minima atque nostrum. Vel quidem rem porro quo perspiciatis
+                eum atque alias cum eveniet sunt nihil voluptatum consequuntur
+                voluptatibus, fugiat provident vitae voluptatem. Quaerat, saepe
+                laboriosam ipsam suscipit nisi et in magni maxime!
+              </p>
+            </section>
+          </article>
 
-        <article class="week-summary">
-          <h3 class="week-summary__heading">Tydzień 5 (11.05.2020)</h3>
-          <section class="lesson">
-            <h4 class="lesson__title">Klan</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus omnis autem rem tempore, unde obcaecati reiciendis
-              consectetur voluptatum eligendi id totam voluptatibus voluptatem
-              voluptas sed expedita quam atque libero fugiat! Quod ab aliquid
-              non animi soluta nulla reiciendis laudantium? Dolore maxime magni
-              ullam quod dolorum et ipsa numquam ad qui dolores corrupti ducimus
-              laborum incidunt vero vel saepe, aliquam illum. Provident magnam,
-              repudiandae perferendis dicta unde ut neque. Adipisci similique,
-              laboriosam illum eligendi laudantium quis voluptatem ullam
-              praesentium possimus mollitia in sapiente officiis odio asperiores
-              ipsam corrupti, nostrum architecto. Rem?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">JS: funkcje</h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-              atque praesentium itaque debitis cupiditate, pariatur repudiandae
-              ipsa maxime necessitatibus modi delectus cum molestiae at dolore
-              enim recusandae. Iste, illum? Cupiditate! Quis repellat nesciunt
-              iste facere cum iusto! Unde, laboriosam porro natus dolorum
-              aspernatur fugiat harum eaque quisquam, quibusdam quo accusamus.
-              Iste eius unde quod eveniet, reiciendis nesciunt esse quisquam!
-              Autem? Facere provident voluptas vel autem? Quod nihil iusto
-              repudiandae culpa rem, reiciendis maiores, amet accusamus animi
-              perferendis, perspiciatis ex? Ipsum consequatur eligendi id
-              obcaecati vitae accusamus et. Iusto, nostrum quae.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">JS: Obiekt</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              voluptate aspernatur cum dolorum rerum soluta sequi est, debitis
-              laudantium officiis nisi autem ab amet inventore iusto ipsam
-              dolores minus esse! Iste praesentium minima repellendus
-              perspiciatis ipsum velit, accusantium ducimus quo sed veritatis
-              numquam aut quibusdam similique sit temporibus libero nisi
-              aliquid! Itaque cum est consequatur dolorem minima iste sed
-              laborum. Qui delectus minima quam, sunt sint in ratione neque
-              distinctio aspernatur natus obcaecati dolores veniam vitae a sed
-              ipsum quibusdam, dolor corporis libero expedita, quae repellat.
-              Ducimus neque aliquid soluta.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">JS: Immutability w obiektach</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Nesciunt, id. Repudiandae, quis vel saepe illum tempore,
-              reiciendis aliquid velit repellendus laborum, eligendi maxime
-              voluptatibus accusantium vero ab aliquam nihil sint? Rem,
-              asperiores vero expedita ut minus voluptas nobis odio ipsum
-              impedit, aliquam nihil corporis error? Debitis deleniti,
-              doloremque, magnam laborum, delectus fugit iure blanditiis illum
-              fugiat nostrum cupiditate cum odio! At dignissimos quos, amet,
-              sapiente vel adipisci quaerat deserunt nulla perspiciatis alias
-              magni illum repellat, magnam molestiae eligendi libero tempora
-              voluptates? Vitae esse et itaque odio perspiciatis temporibus vel
-              mollitia!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">U mnie (nie) działa</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
-              fugiat aspernatur maxime voluptates rerum! Laboriosam neque
-              dolores dolore harum a explicabo veniam, assumenda ratione, autem,
-              totam debitis esse quidem voluptatum. Veritatis similique
-              cupiditate doloribus! Error, quas porro temporibus repudiandae
-              laboriosam necessitatibus odio quae provident. Nihil dolorem
-              ullam, placeat nemo eum voluptatem eos dolore ratione alias soluta
-              et illo officia libero? Magni voluptates voluptatibus eligendi
-              aperiam distinctio ducimus voluptate eum laboriosam animi
-              doloribus autem voluptatem sed totam dolore neque a voluptatum
-              libero aspernatur eaque, ratione inventore rem explicabo atque
-              error. Ea.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">HTML: Listy, definicje, tabele</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-              nemo voluptas ipsum ipsa voluptates cumque est debitis illum sed
-              ex labore ducimus? Aliquid molestias maiores illum, quis
-              perferendis fuga possimus! Odit ipsa sequi voluptate rerum culpa
-              officiis iusto, alias aliquam natus consectetur eius
-              exercitationem id autem consequatur ullam libero provident illum
-              voluptatibus expedita. Facere nisi voluptatum soluta qui libero
-              nemo. Sunt aliquid, corrupti aliquam modi tempora nesciunt
-              possimus quaerat sit quisquam doloribus ut facilis? Saepe eos,
-              aperiam at cumque ad in eius deleniti accusantium doloremque
-              sapiente est totam nam nulla!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Normalizacja vs reset</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-              labore ipsum explicabo! Provident sunt eos eligendi molestias
-              excepturi ex a, eveniet, labore vero nemo voluptatem aperiam saepe
-              ipsa in explicabo. Ipsam voluptates modi, quaerat est tenetur
-              dolores odit amet cum ad cumque aspernatur consequatur labore quam
-              dicta magnam iusto, libero excepturi id dignissimos dolore
-              delectus reiciendis molestiae quas mollitia. Amet. Animi, adipisci
-              aliquam cupiditate exercitationem assumenda aut sunt. Corrupti
-              velit possimus soluta blanditiis nesciunt vero nam error non
-              expedita vel. Minus ab odio voluptates corrupti eligendi quia
-              accusamus accusantium autem.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Flexbox</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Blanditiis cum totam laboriosam porro quaerat dolores voluptatem
-              corrupti illum velit enim, quidem mollitia soluta! Eos
-              voluptatibus in eum sint reprehenderit. Eligendi. Iusto voluptate
-              eaque omnis voluptates blanditiis hic consequatur dicta dolorem
-              ab. Quibusdam voluptatem error in itaque deleniti, ullam eos natus
-              commodi quisquam explicabo tenetur ut. Tempore placeat laudantium
-              saepe expedita? Magnam necessitatibus fugiat consequatur
-              reiciendis voluptatem molestias sint hic ea quae, culpa qui
-              placeat corrupti consectetur. Tempore incidunt temporibus quia,
-              ipsa alias saepe distinctio debitis quis cumque ducimus excepturi
-              numquam!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Tła</h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-              tenetur perferendis optio quod sapiente voluptas. Sit magni
-              voluptates vel facere totam, quasi debitis obcaecati maxime eos
-              nostrum dolorem impedit dolorum. Facere minus rem sapiente. Dolor
-              quam perspiciatis itaque consequatur harum unde ea sed cumque
-              omnis odit rem velit inventore accusantium modi asperiores amet
-              esse sapiente, quod minima saepe qui culpa! Magnam nostrum
-              voluptatum perspiciatis minima beatae consequatur hic laboriosam,
-              atque tenetur, minus iste eveniet, eum eos suscipit? Velit
-              temporibus dolore saepe, quo, exercitationem at doloribus eveniet
-              unde laudantium dolores perferendis.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Grafik cięcie - też zajęcie</h4>
-            <p class="lesson__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem temporibus dicta earum deleniti ex? Debitis facere
-              libero corrupti odio ipsa. Quod assumenda accusamus debitis velit
-              libero omnis corporis porro repellendus! Nobis pariatur
-              exercitationem nulla mollitia iure sit consectetur. Itaque vel
-              facere reiciendis ipsa, consectetur iure totam libero ab
-              laudantium culpa, alias sint, eos fugiat debitis repellat illo
-              minima atque nostrum. Vel quidem rem porro quo perspiciatis eum
-              atque alias cum eveniet sunt nihil voluptatum consequuntur
-              voluptatibus, fugiat provident vitae voluptatem. Quaerat, saepe
-              laboriosam ipsam suscipit nisi et in magni maxime!
-            </p>
-          </section>
-        </article>
-
-        <article class="week-summary">
-          <h3 class="week-summary__heading">Tydzień 6 (18.05.2020)</h3>
-          <section class="lesson">
-            <h4 class="lesson__title">JS: Logika</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusamus incidunt ipsa placeat eligendi distinctio porro dolorum.
-              Perferendis, ad ex! Cumque natus reprehenderit accusantium sint
-              quo culpa maxime odit necessitatibus inventore. Cupiditate aut
-              doloremque alias quasi aliquid praesentium explicabo libero saepe
-              voluptatum porro architecto dolorum harum, suscipit ipsam quia
-              vero animi iusto nobis molestiae eos officia odit eligendi veniam.
-              Ipsum, dicta. Porro quos animi minus laboriosam repudiandae
-              necessitatibus tenetur suscipit. Inventore necessitatibus
-              laboriosam maiores, delectus corrupti quam excepturi consectetur
-              placeat ipsum repudiandae veritatis odit at culpa cumque tempore
-              cum architecto numquam.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Formularze: form, input & label</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              similique quos, odio ex aliquid fugiat iure cupiditate, neque
-              voluptatem eligendi sunt deleniti aut mollitia soluta velit
-              nesciunt, sit optio quam. Optio non earum, fuga quasi id
-              voluptatem facilis enim beatae error, aliquam magni maxime ducimus
-              odit nostrum veritatis nihil, in perspiciatis dignissimos minima
-              quibusdam. Voluptatem quam provident aspernatur quo expedita? Sit
-              alias at sint architecto, deserunt soluta saepe. Eos vitae
-              eligendi vero et sit ab distinctio corrupti minus reiciendis
-              recusandae? Sint minus nemo, harum dolore omnis sequi sunt?
-              Minima, rem.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Formularze: fieldset, radio, checkbox</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-              quia perspiciatis, repellendus optio adipisci est. Veritatis enim
-              voluptas quo quod quisquam aut error incidunt itaque, blanditiis
-              magnam voluptatum dolore assumenda! Ut sit ullam, numquam ab magni
-              exercitationem error possimus culpa. Blanditiis laborum eaque
-              optio placeat, voluptatem voluptates delectus veritatis tempore
-              dolorem adipisci ea molestiae! Rerum officiis unde consequuntur
-              perferendis sequi? Illum quaerat sunt temporibus aliquam officiis
-              commodi similique repellat sapiente nisi natus ad earum, dolor
-              sint modi voluptate quo. Iste accusantium nihil quaerat maiores
-              voluptate tenetur ipsum ipsam laborum suscipit.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">
-              Formularze: number, tel, email, range, password, file
-            </h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              unde pariatur illo quam aliquid, quidem optio laborum nulla!
-              Laboriosam quos suscipit exercitationem dignissimos nemo ullam
-              labore impedit tempore consectetur voluptate! Itaque ut quaerat,
-              possimus obcaecati aperiam sint id eum ratione vel in sequi harum
-              aut alias impedit, perspiciatis cumque nam. Quaerat consequatur
-              accusantium explicabo sit molestiae minus fugiat atque culpa.
-              Consequatur aut omnis corporis esse numquam minima nostrum
-              veritatis animi, dolores sed quidem officiis. Reiciendis aliquam
-              eos ullam, modi fugit qui asperiores dignissimos minus ipsam
-              quibusdam. Nam ipsam quas quia?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Formularze: select, textarea, submit</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem
-              unde, dolorem repellendus sit quae veniam rerum facere quis ullam,
-              quod voluptatibus qui. Odit nam laudantium, ullam sequi at ab.
-              Fuga possimus labore consectetur voluptatem, reiciendis unde
-              laborum tempore asperiores deleniti facilis quis praesentium illum
-              nobis fugit nam quaerat voluptates expedita minima magni est
-              aliquam laudantium eum nostrum! Libero, pariatur? Tempora non
-              facere, dicta aliquid quae temporibus fuga earum ducimus
-              voluptates tempore nesciunt ratione impedit, voluptate reiciendis
-              optio voluptatibus laudantium nihil quibusdam sequi eligendi? Eos,
-              reprehenderit nesciunt. Eos, adipisci cum.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Formularze: GET i POST</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              iusto consequuntur excepturi est sit suscipit ipsam quod
-              reiciendis cumque explicabo eos, delectus doloremque debitis quasi
-              pariatur voluptatibus voluptatem possimus ipsa. Necessitatibus
-              commodi earum iure quos accusantium fuga, maxime hic atque nulla,
-              eum debitis optio dolores amet iusto fugit sit omnis ullam, magni
-              eos facilis nihil tempore molestiae dicta. Officia, adipisci!
-              Mollitia itaque deserunt eveniet ut est sapiente eligendi adipisci
-              quisquam error, provident praesentium quia cupiditate cumque?
-              Accusantium inventore facilis aliquam, odio autem nulla
-              consequatur, perferendis molestias architecto cupiditate
-              laudantium ipsum?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Formularze: walidacja</h4>
-            <p class="lesson__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-              nisi incidunt ratione debitis, nulla quas error, ad iusto sint
-              numquam corrupti provident modi rem neque laudantium veritatis
-              fuga dicta. Eveniet. Aut, quis possimus enim odit debitis ullam
-              nostrum ducimus eaque, officiis ratione eius repellat excepturi
-              aliquid cupiditate, veritatis ab ipsa modi ipsum sint
-              reprehenderit laboriosam? Alias possimus soluta voluptatem
-              voluptatum? Aperiam in deserunt ratione commodi perspiciatis
-              nostrum, totam perferendis enim consequatur a aliquid autem
-              doloribus ab optio ut neque qui consequuntur incidunt fuga culpa
-              veniam eveniet, sunt assumenda veritatis! Cum?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">CSS: Grid</h4>
-            <p class="lesson__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis ab a, accusantium quae sequi eum distinctio quisquam
-              assumenda ad odio facilis! Totam earum aliquid eum. Iure voluptate
-              incidunt tempore obcaecati? Ratione vero laudantium magnam ipsum
-              eius ea quasi at quaerat nesciunt dicta tempora omnis eligendi
-              exercitationem deleniti iure ex provident fugiat reiciendis,
-              impedit sit. Eaque libero ratione dolor? Ea, facere. Sit veniam
-              nobis illum voluptate exercitationem deserunt quae dignissimos
-              quos adipisci recusandae ab nulla voluptates officiis, obcaecati
-              eos impedit eius, quis corrupti cumque necessitatibus modi
-              nesciunt, officia illo velit? Deleniti.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">CSS: Grid - podstawowy layout</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-              laboriosam qui fuga, distinctio similique veritatis perspiciatis
-              alias laudantium eius temporibus, ex ipsum voluptatum reiciendis.
-              Facere voluptatum excepturi praesentium exercitationem aliquam.
-              Nostrum labore numquam est porro. Neque atque, earum magni
-              suscipit minima illum facilis illo soluta, laboriosam, voluptates
-              temporibus tempore. Labore reprehenderit vel beatae hic nulla
-              deserunt harum a quam doloremque. Alias temporibus animi itaque,
-              facilis et dignissimos consequatur ipsam, vero ducimus deserunt
-              odit est illum sunt maxime saepe quis voluptate explicabo nulla
-              officia atque enim. Facilis debitis quaerat autem aliquam!
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">CSS: Media queries & mobile first</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ut
-              voluptatum unde nemo dignissimos aspernatur ullam suscipit
-              repellat ab. Veritatis nesciunt minima praesentium amet,
-              consequuntur quia voluptatem omnis iste debitis! Accusantium,
-              necessitatibus obcaecati laborum impedit esse, harum quos nam
-              eaque, ad provident eius beatae amet rem cum suscipit laboriosam
-              ipsum maxime magni aperiam ipsa. Iusto nam provident est eveniet
-              soluta? Tempore architecto deleniti obcaecati animi harum dicta
-              cupiditate aliquam adipisci dignissimos magni earum placeat, nulla
-              quidem aut delectus? Illum modi mollitia pariatur debitis fugiat
-              quaerat placeat totam. Nobis, molestias nemo?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">JS: Eventy</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Molestiae magnam, doloremque deserunt rerum maiores excepturi fuga
-              facilis reprehenderit doloribus aperiam aliquid qui! Culpa aperiam
-              eos quam, aspernatur ab soluta suscipit? Doloremque harum
-              obcaecati quis recusandae quas ut dolorum neque culpa voluptates
-              quam ipsa dolore modi ex, nulla perspiciatis animi ipsum
-              voluptatem vero quos maiores sit quaerat alias. Sapiente,
-              architecto aut. Accusamus reprehenderit maxime dolores recusandae
-              nulla nihil adipisci in vitae, rem labore dolorem perferendis,
-              dicta ratione minus asperiores quas quod corporis consequuntur
-              pariatur veritatis earum molestiae quam! Temporibus, quasi
-              laborum?
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">Hamburger menu</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam et
-              itaque neque molestias. Accusamus voluptates vitae beatae nesciunt
-              illum quas placeat voluptatem modi nulla voluptas, ipsam doloribus
-              veniam officiis quaerat! Deserunt explicabo quis architecto aut
-              eligendi illo voluptas esse maiores molestiae, repellendus
-              asperiores pariatur tenetur totam commodi dolorum cupiditate ad
-              odio labore impedit eos voluptatum animi? Optio, dolore facilis?
-              Libero. Laboriosam unde tenetur, excepturi consequatur aspernatur
-              consequuntur reiciendis quas tempore laborum animi quos modi,
-              alias, fugiat accusamus delectus. Culpa ipsum perspiciatis rerum
-              quidem eligendi odio amet dolores minus modi inventore.
-            </p>
-          </section>
-          <section class="lesson">
-            <h4 class="lesson__title">GitHub pages: statyczny hosting</h4>
-            <p class="lesson__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi
-              sunt incidunt obcaecati, excepturi velit dolorem officiis autem et
-              voluptatum, nam non totam est, rem ullam ipsa. A, reprehenderit
-              incidunt? Neque sunt molestiae voluptate ipsam pariatur error!
-              Laboriosam fugiat quibusdam cupiditate, voluptates earum minus
-              recusandae iste corporis, porro tempore deserunt nesciunt impedit
-              eveniet numquam atque doloremque esse reprehenderit veniam.
-              Voluptatem. At, numquam facilis neque rerum veniam dolore quas
-              doloribus laudantium. Autem, explicabo id quae sequi sed
-              doloremque adipisci a totam enim consequuntur nihil, odio itaque
-              similique minus illo est laboriosam.
-            </p>
-          </section>
-        </article>
+          <article class="week-summary">
+            <h3 class="week-summary__heading">Tydzień 6 (18.05.2020)</h3>
+            <section class="lesson">
+              <h4 class="lesson__title">JS: Logika</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus incidunt ipsa placeat eligendi distinctio porro
+                dolorum. Perferendis, ad ex! Cumque natus reprehenderit
+                accusantium sint quo culpa maxime odit necessitatibus inventore.
+                Cupiditate aut doloremque alias quasi aliquid praesentium
+                explicabo libero saepe voluptatum porro architecto dolorum
+                harum, suscipit ipsam quia vero animi iusto nobis molestiae eos
+                officia odit eligendi veniam. Ipsum, dicta. Porro quos animi
+                minus laboriosam repudiandae necessitatibus tenetur suscipit.
+                Inventore necessitatibus laboriosam maiores, delectus corrupti
+                quam excepturi consectetur placeat ipsum repudiandae veritatis
+                odit at culpa cumque tempore cum architecto numquam.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Formularze: form, input & label</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                similique quos, odio ex aliquid fugiat iure cupiditate, neque
+                voluptatem eligendi sunt deleniti aut mollitia soluta velit
+                nesciunt, sit optio quam. Optio non earum, fuga quasi id
+                voluptatem facilis enim beatae error, aliquam magni maxime
+                ducimus odit nostrum veritatis nihil, in perspiciatis
+                dignissimos minima quibusdam. Voluptatem quam provident
+                aspernatur quo expedita? Sit alias at sint architecto, deserunt
+                soluta saepe. Eos vitae eligendi vero et sit ab distinctio
+                corrupti minus reiciendis recusandae? Sint minus nemo, harum
+                dolore omnis sequi sunt? Minima, rem.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Formularze: fieldset, radio, checkbox
+              </h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officiis quia perspiciatis, repellendus optio adipisci est.
+                Veritatis enim voluptas quo quod quisquam aut error incidunt
+                itaque, blanditiis magnam voluptatum dolore assumenda! Ut sit
+                ullam, numquam ab magni exercitationem error possimus culpa.
+                Blanditiis laborum eaque optio placeat, voluptatem voluptates
+                delectus veritatis tempore dolorem adipisci ea molestiae! Rerum
+                officiis unde consequuntur perferendis sequi? Illum quaerat sunt
+                temporibus aliquam officiis commodi similique repellat sapiente
+                nisi natus ad earum, dolor sint modi voluptate quo. Iste
+                accusantium nihil quaerat maiores voluptate tenetur ipsum ipsam
+                laborum suscipit.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Formularze: number, tel, email, range, password, file
+              </h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam unde pariatur illo quam aliquid, quidem optio laborum
+                nulla! Laboriosam quos suscipit exercitationem dignissimos nemo
+                ullam labore impedit tempore consectetur voluptate! Itaque ut
+                quaerat, possimus obcaecati aperiam sint id eum ratione vel in
+                sequi harum aut alias impedit, perspiciatis cumque nam. Quaerat
+                consequatur accusantium explicabo sit molestiae minus fugiat
+                atque culpa. Consequatur aut omnis corporis esse numquam minima
+                nostrum veritatis animi, dolores sed quidem officiis. Reiciendis
+                aliquam eos ullam, modi fugit qui asperiores dignissimos minus
+                ipsam quibusdam. Nam ipsam quas quia?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">
+                Formularze: select, textarea, submit
+              </h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem
+                unde, dolorem repellendus sit quae veniam rerum facere quis
+                ullam, quod voluptatibus qui. Odit nam laudantium, ullam sequi
+                at ab. Fuga possimus labore consectetur voluptatem, reiciendis
+                unde laborum tempore asperiores deleniti facilis quis
+                praesentium illum nobis fugit nam quaerat voluptates expedita
+                minima magni est aliquam laudantium eum nostrum! Libero,
+                pariatur? Tempora non facere, dicta aliquid quae temporibus fuga
+                earum ducimus voluptates tempore nesciunt ratione impedit,
+                voluptate reiciendis optio voluptatibus laudantium nihil
+                quibusdam sequi eligendi? Eos, reprehenderit nesciunt. Eos,
+                adipisci cum.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Formularze: GET i POST</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                iusto consequuntur excepturi est sit suscipit ipsam quod
+                reiciendis cumque explicabo eos, delectus doloremque debitis
+                quasi pariatur voluptatibus voluptatem possimus ipsa.
+                Necessitatibus commodi earum iure quos accusantium fuga, maxime
+                hic atque nulla, eum debitis optio dolores amet iusto fugit sit
+                omnis ullam, magni eos facilis nihil tempore molestiae dicta.
+                Officia, adipisci! Mollitia itaque deserunt eveniet ut est
+                sapiente eligendi adipisci quisquam error, provident praesentium
+                quia cupiditate cumque? Accusantium inventore facilis aliquam,
+                odio autem nulla consequatur, perferendis molestias architecto
+                cupiditate laudantium ipsum?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Formularze: walidacja</h4>
+              <p class="lesson__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                nisi incidunt ratione debitis, nulla quas error, ad iusto sint
+                numquam corrupti provident modi rem neque laudantium veritatis
+                fuga dicta. Eveniet. Aut, quis possimus enim odit debitis ullam
+                nostrum ducimus eaque, officiis ratione eius repellat excepturi
+                aliquid cupiditate, veritatis ab ipsa modi ipsum sint
+                reprehenderit laboriosam? Alias possimus soluta voluptatem
+                voluptatum? Aperiam in deserunt ratione commodi perspiciatis
+                nostrum, totam perferendis enim consequatur a aliquid autem
+                doloribus ab optio ut neque qui consequuntur incidunt fuga culpa
+                veniam eveniet, sunt assumenda veritatis! Cum?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">CSS: Grid</h4>
+              <p class="lesson__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis ab a, accusantium quae sequi eum distinctio quisquam
+                assumenda ad odio facilis! Totam earum aliquid eum. Iure
+                voluptate incidunt tempore obcaecati? Ratione vero laudantium
+                magnam ipsum eius ea quasi at quaerat nesciunt dicta tempora
+                omnis eligendi exercitationem deleniti iure ex provident fugiat
+                reiciendis, impedit sit. Eaque libero ratione dolor? Ea, facere.
+                Sit veniam nobis illum voluptate exercitationem deserunt quae
+                dignissimos quos adipisci recusandae ab nulla voluptates
+                officiis, obcaecati eos impedit eius, quis corrupti cumque
+                necessitatibus modi nesciunt, officia illo velit? Deleniti.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">CSS: Grid - podstawowy layout</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+                laboriosam qui fuga, distinctio similique veritatis perspiciatis
+                alias laudantium eius temporibus, ex ipsum voluptatum
+                reiciendis. Facere voluptatum excepturi praesentium
+                exercitationem aliquam. Nostrum labore numquam est porro. Neque
+                atque, earum magni suscipit minima illum facilis illo soluta,
+                laboriosam, voluptates temporibus tempore. Labore reprehenderit
+                vel beatae hic nulla deserunt harum a quam doloremque. Alias
+                temporibus animi itaque, facilis et dignissimos consequatur
+                ipsam, vero ducimus deserunt odit est illum sunt maxime saepe
+                quis voluptate explicabo nulla officia atque enim. Facilis
+                debitis quaerat autem aliquam!
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">CSS: Media queries & mobile first</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                ut voluptatum unde nemo dignissimos aspernatur ullam suscipit
+                repellat ab. Veritatis nesciunt minima praesentium amet,
+                consequuntur quia voluptatem omnis iste debitis! Accusantium,
+                necessitatibus obcaecati laborum impedit esse, harum quos nam
+                eaque, ad provident eius beatae amet rem cum suscipit laboriosam
+                ipsum maxime magni aperiam ipsa. Iusto nam provident est eveniet
+                soluta? Tempore architecto deleniti obcaecati animi harum dicta
+                cupiditate aliquam adipisci dignissimos magni earum placeat,
+                nulla quidem aut delectus? Illum modi mollitia pariatur debitis
+                fugiat quaerat placeat totam. Nobis, molestias nemo?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">JS: Eventy</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Molestiae magnam, doloremque deserunt rerum maiores excepturi
+                fuga facilis reprehenderit doloribus aperiam aliquid qui! Culpa
+                aperiam eos quam, aspernatur ab soluta suscipit? Doloremque
+                harum obcaecati quis recusandae quas ut dolorum neque culpa
+                voluptates quam ipsa dolore modi ex, nulla perspiciatis animi
+                ipsum voluptatem vero quos maiores sit quaerat alias. Sapiente,
+                architecto aut. Accusamus reprehenderit maxime dolores
+                recusandae nulla nihil adipisci in vitae, rem labore dolorem
+                perferendis, dicta ratione minus asperiores quas quod corporis
+                consequuntur pariatur veritatis earum molestiae quam!
+                Temporibus, quasi laborum?
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">Hamburger menu</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+                et itaque neque molestias. Accusamus voluptates vitae beatae
+                nesciunt illum quas placeat voluptatem modi nulla voluptas,
+                ipsam doloribus veniam officiis quaerat! Deserunt explicabo quis
+                architecto aut eligendi illo voluptas esse maiores molestiae,
+                repellendus asperiores pariatur tenetur totam commodi dolorum
+                cupiditate ad odio labore impedit eos voluptatum animi? Optio,
+                dolore facilis? Libero. Laboriosam unde tenetur, excepturi
+                consequatur aspernatur consequuntur reiciendis quas tempore
+                laborum animi quos modi, alias, fugiat accusamus delectus. Culpa
+                ipsum perspiciatis rerum quidem eligendi odio amet dolores minus
+                modi inventore.
+              </p>
+            </section>
+            <section class="lesson">
+              <h4 class="lesson__title">GitHub pages: statyczny hosting</h4>
+              <p class="lesson__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi
+                sunt incidunt obcaecati, excepturi velit dolorem officiis autem
+                et voluptatum, nam non totam est, rem ullam ipsa. A,
+                reprehenderit incidunt? Neque sunt molestiae voluptate ipsam
+                pariatur error! Laboriosam fugiat quibusdam cupiditate,
+                voluptates earum minus recusandae iste corporis, porro tempore
+                deserunt nesciunt impedit eveniet numquam atque doloremque esse
+                reprehenderit veniam. Voluptatem. At, numquam facilis neque
+                rerum veniam dolore quas doloribus laudantium. Autem, explicabo
+                id quae sequi sed doloremque adipisci a totam enim consequuntur
+                nihil, odio itaque similique minus illo est laboriosam.
+              </p>
+            </section>
+          </article>
+        </div>
       </section>
     </main>
 

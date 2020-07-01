@@ -60,7 +60,7 @@ body {
 
 .lesson__description {
   color: rgb(29, 28, 28);
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   font-size: 16px;
   line-height: 22px;
 }
@@ -76,6 +76,13 @@ body {
 .main {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
 }
 
 .main__heading {
@@ -123,14 +130,21 @@ body {
   color: #000;
 }
 
+.notes__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+}
+
 .notes__heading {
   color: #1f7a8c;
 }
 
 .week-summary {
-  padding: 16px;
-  border: 1px solid #ccc;
-  margin-bottom: 16px;
+  padding: 0 16px;
+  border: 2px solid #ccc;
+  /* margin-bottom: 16px; */
 }
 
 .week-summary--special {
