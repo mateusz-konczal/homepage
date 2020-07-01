@@ -14,13 +14,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-me {
-  overflow: hidden;
-}
-
 .about-me__description {
   color: #7e0e06;
-  padding: 16px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -30,11 +26,7 @@ body {
 }
 
 .about-me__picture {
-  max-width: 250px;
-  max-height: 350px;
-  padding-right: 16px;
-  margin-bottom: 16px;
-  float: left;
+  max-width: 100%;
 }
 
 .footer {
@@ -60,7 +52,6 @@ body {
 
 .lesson__description {
   color: rgb(29, 28, 28);
-  /* margin-bottom: 32px; */
   font-size: 16px;
   line-height: 22px;
 }
@@ -78,13 +69,6 @@ body {
   margin: 0 auto;
 }
 
-.main__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 8px;
-  row-gap: 16px;
-}
-
 .main__heading {
   color: #022b3a;
   margin: 0;
@@ -97,7 +81,7 @@ body {
 }
 
 .navigation {
-  background: #478a05;
+  background: #04266e;
   padding: 16px;
   border-radius: 8px;
   display: flex;
@@ -107,7 +91,7 @@ body {
 .navigation__link {
   color: #fff;
   display: inline-block;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .navigation__link--css {
@@ -130,13 +114,6 @@ body {
   color: #000;
 }
 
-.notes__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 8px;
-  row-gap: 16px;
-}
-
 .notes__heading {
   color: #1f7a8c;
 }
@@ -144,7 +121,7 @@ body {
 .week-summary {
   padding: 0 16px;
   border: 2px solid #ccc;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
 .week-summary--special {
@@ -154,4 +131,54 @@ body {
 .week-summary__heading {
   color: #21a179;
   margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  /* .about-me {
+    overflow: hidden;
+  } */
+
+  .about-me__grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .about-me__description {
+    padding: 0 16px;
+    margin: 0;
+  }
+
+  .about-me__picture {
+    /* max-width: 300px;
+    max-height: 400px;
+    padding-right: 16px;
+    float: left; */
+    margin-bottom: 16px;
+  }
+
+  .main__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+
+  .navigation {
+    background: #478a05;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .notes__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+
+  .week-summary {
+    margin: 0;
+  }
 }
