@@ -14,13 +14,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-me {
-  overflow: hidden;
-}
-
 .about-me__description {
   color: #7e0e06;
-  padding: 16px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -30,11 +26,8 @@ body {
 }
 
 .about-me__picture {
-  max-width: 250px;
-  max-height: 350px;
-  padding-right: 16px;
-  margin-bottom: 16px;
-  float: left;
+  display: block;
+  max-width: 100%;
 }
 
 .footer {
@@ -53,14 +46,27 @@ body {
   color: #ff7d00;
 }
 
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: none;
+  background: none;
+}
+
 .header {
-  top: 0;
+  background: #5bba6f;
+  min-height: 60px;
   position: sticky;
+  top: 0;
+  /* position: fixed;
+  top: 0; */
+  width: 100%;
+  border-radius: 8px;
 }
 
 .lesson__description {
   color: rgb(29, 28, 28);
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -76,10 +82,11 @@ body {
 .main {
   max-width: 1000px;
   margin: 0 auto;
+  /* margin: 70px auto 0; */
 }
 
 .main__heading {
-  color: #022b3a;
+  color: #05115a;
   margin: 0;
   margin-top: 16px;
 }
@@ -90,37 +97,34 @@ body {
 }
 
 .navigation {
-  background: #478a05;
   padding: 16px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-around;
+  display: none;
+}
+
+.navigation--open {
+  display: block;
 }
 
 .navigation__link {
-  color: #fff;
-  display: inline-block;
-  margin-right: 20px;
+  color: rgb(255, 243, 137);
+  display: block;
+  margin: 0 0 16px;
 }
 
 .navigation__link--css {
-  background: yellow;
-  color: #000;
+  color: rgb(49, 49, 49);
 }
 
 .navigation__link--homepage {
-  background: yellow;
-  color: #000;
+  color: rgb(49, 49, 49);
 }
 
 .navigation__link--html {
-  background: yellow;
-  color: #000;
+  color: rgb(49, 49, 49);
 }
 
 .navigation__link--javascript {
-  background: yellow;
-  color: #000;
+  color: rgb(49, 49, 49);
 }
 
 .notes__heading {
@@ -128,8 +132,8 @@ body {
 }
 
 .week-summary {
-  padding: 16px;
-  border: 1px solid #ccc;
+  padding: 0 16px;
+  border: 2px solid #ccc;
   margin-bottom: 16px;
 }
 
@@ -140,4 +144,61 @@ body {
 .week-summary__heading {
   color: #21a179;
   margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  /* .about-me {
+    overflow: hidden;
+  } */
+
+  .about-me__description {
+    padding: 0 16px;
+    margin: 0;
+  }
+
+  .about-me__grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .about-me__picture {
+    /* max-width: 300px;
+    max-height: 400px;
+    padding-right: 16px;
+    float: left; */
+    margin-bottom: 16px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .main__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+
+  .navigation {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navigation__link {
+    margin: 0;
+  }
+
+  .notes__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+
+  .week-summary {
+    margin: 0;
+  }
 }

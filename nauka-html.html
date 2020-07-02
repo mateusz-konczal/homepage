@@ -10,7 +10,10 @@
 
   <body id="top">
     <header class="header">
-      <nav class="navigation">
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link" href="index.html">Strona główna</a>
         <a
           class="navigation__link navigation__link--html"
@@ -27,22 +30,23 @@
         <h1 class="main__heading">HTML</h1>
         <img class="main__picture" src="img/logo-html5.jpg" alt="Logo HTML5" />
       </header>
+      <div class="main__grid">
+        <section class="week-summary">
+          <h2 class="week-summary__heading">Tydzień 2</h2>
+          <article class="lesson">
+            <h3 class="lesson__title">Wstęp do HTML</h3>
+            <p class="lesson__description">HTML = HyperText Markup Language</p>
+          </article>
+        </section>
 
-      <section class="week-summary">
-        <h2 class="week-summary__heading">Tydzień 2</h2>
-        <article class="lesson">
-          <h3 class="lesson__title">Wstęp do HTML</h3>
-          <p class="lesson__description">HTML = HyperText Markup Language</p>
-        </article>
-      </section>
-
-      <section class="week-summary">
-        <h2 class="week-summary__heading">Tydzień 3</h2>
-        <article class="lesson">
-          <h3 class="lesson__title">Atrybuty</h3>
-          <p class="lesson__description">href, target, id, src, alt, class</p>
-        </article>
-      </section>
+        <section class="week-summary">
+          <h2 class="week-summary__heading">Tydzień 3</h2>
+          <article class="lesson">
+            <h3 class="lesson__title">Atrybuty</h3>
+            <p class="lesson__description">href, target, id, src, alt, class</p>
+          </article>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
@@ -54,5 +58,7 @@
         <a class="footer__link--top" href="#top">Wróć na górę strony</a>
       </p>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
