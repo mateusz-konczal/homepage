@@ -1,11 +1,11 @@
 const firstName = "Mateusz";
 const age = 24;
 
-alert("Witaj, przybyszu! 👋");
+// alert("Witaj, przybyszu! 👋");
 console.log(`Siema ✋, nazywam się ${firstName} i mam ${age} lata. 🚀`);
 
-const emptyParagraph = document.querySelector(".main__description--js");
-emptyParagraph.innerHTML = `<b>Hello!</b>`;
+// const emptyParagraph = document.querySelector(".main__description--js");
+// emptyParagraph.innerHTML = `<b>Hello!</b>`;
 
 // ZWYKŁA FUNKCJA
 function greetOld(name, age) {
@@ -59,3 +59,11 @@ const showMeProperty = (property) => {
 showMeProperty(myProperty);
 
 person.greet("Andrzej", 52);
+
+// HAMBURGER MENU
+const hamburger = document.querySelector(".hamburger--js");
+
+hamburger.addEventListener("click", () => {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+});
