@@ -4,6 +4,7 @@
   "description": "",
   "main": "js/main.js",
   "scripts": {
+    "cow": "npx cowsay -s Jak informatyk broni się przed koronawirusem? Antywirusem 😀.",
     "start": "node js/script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/MPKonczal/homepage#readme",
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "cowsay": "^1.4.0"
   }
 }
