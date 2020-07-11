@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MPKonczal/homepage/issues"
   },
-  "homepage": "https://github.com/MPKonczal/homepage#readme"
+  "homepage": "https://github.com/MPKonczal/homepage#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
