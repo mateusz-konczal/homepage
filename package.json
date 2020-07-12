@@ -5,6 +5,7 @@
   "main": "js/main.js",
   "scripts": {
     "cow": "npx cowsay -s Jak informatyk broni się przed koronawirusem? Antywirusem 😀.",
+    "sass": "npx node-sass -w scss/style.scss css/style.css",
     "start": "node js/script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
