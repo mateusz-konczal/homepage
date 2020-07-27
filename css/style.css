@@ -154,6 +154,7 @@ body {
       display: inline-block;
       width: 12px;
       height: 12px;
+      margin-right: 8px;
       border-radius: 50%;
       background: #940404; }
   @media (min-width: 768px) {
